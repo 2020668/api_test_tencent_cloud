@@ -45,7 +45,7 @@ with open(file_path, 'wb') as f:
     runner.run(suite)
 
 
-mail_title = "亿钱贷项目接口测试报告"
-mail_message = "这是亿钱贷接口测试报告，请各位领导注意查收，谢谢!"
+mail_title = "小钱贷项目接口测试报告"
+mail_message = "这是小钱贷接口测试报告，请各位领导注意查收，谢谢!"
 SendEmail.send_qq_file_mail(mail_title, mail_message, file_path)
 # SendEmail.send_outlook_file_mail(mail_title, mail_message, file_path)
