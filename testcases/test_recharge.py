@@ -43,9 +43,16 @@ class RechargeTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
 
-        my_log.info("准备开始执行充值接口的测试......")
+        my_log.info("======== 准备开始执行充值接口的测试 ========")
         cls.request = HTTPRequest2()
         cls.db = ExecuteMysql()
+
+    @classmethod
+    def tearDownClass(cls):
+
+        my_log.info("======== 充值接口测试执行完毕 ========")
+        cls.request.close()
+        cls.db.close()
 
     @data(*cases)   # 拆包，拆成几个参数
     def test_recharge(self, case):
@@ -89,11 +96,10 @@ class RechargeTestCase(unittest.TestCase):
         print("期望结果---> {}".format(case.expected_data))
         print("服务器响应数据--> {}".format(response.json()))
 
+        # res = response.json()返回json格式，自动转换成Python的dict类型，只取部分字段进行断言
         res = {"status": response.json()["status"], "code": response.json()["code"], "msg": response.json()["msg"]}
 
         try:
-            # res = response.json()返回json格式，自动转换成Python的dict类型，只取部分字段进行断言
-            # res = {"status": response.json()["status"], "code": response.json()["code"], "msg": response.json()["msg"]}
             self.assertEqual(eval(case.expected_data), res)
             if case.check_mysql:
                 # case.request_data是str类型，先转换为dict再来取值，float
@@ -117,9 +123,3 @@ class RechargeTestCase(unittest.TestCase):
             self.wb.write_data(row=self.row, column=10, value=str(res))
             self.wb.write_data(row=self.row, column=11, value=result)
 
-    @classmethod
-    def tearDownClass(cls):
-
-        my_log.info("充值接口测试执行完毕......")
-        cls.request.close()
-        cls.db.close()
