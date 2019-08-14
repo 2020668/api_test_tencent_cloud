@@ -4,18 +4,6 @@
     <list default="true" id="896291c5-ff29-4440-be86-de7a736d986f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/send_email.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/qcd_testcases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/qcd_testcases.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190813133842_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190813234327_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190813234822_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190814083513_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190814192912_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190814210044_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190814210839_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/20190814223224_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190814210916_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/20190814223334_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190814211822_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190814212734_report.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="542">
@@ -37,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/send_email.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
+            <state relative-caret-position="217">
+              <caret line="154" column="17" selection-start-line="154" selection-start-column="17" selection-end-line="155" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -284,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565711525616</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="version 20190813">
+      <created>1565793588762</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1565793588762</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -437,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/send_email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
@@ -451,6 +439,13 @@
           <folding>
             <element signature="e#168#183#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/send_email.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="154" column="17" selection-start-line="154" selection-start-column="17" selection-end-line="155" selection-end-column="22" />
         </state>
       </provider>
     </entry>
