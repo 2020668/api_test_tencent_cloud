@@ -152,8 +152,8 @@ class SendEmail(object):
         except Exception as e:
             print("send qq_mail failed")
             raise e
-        # finally:
-        #     s.quit()
+        finally:
+            s.quit()
 
     @staticmethod
     def send_outlook_file_mail(mail_title, mail_message, file_path):
