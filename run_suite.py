@@ -26,13 +26,13 @@ _description = conf.get('report', 'description')
 _tester = conf.get('report', 'tester')
 report_name = conf.get('report', 'report_name')
 report_name = time.strftime("%Y%m%d%H%M%S", time.localtime()) + "_" + report_name
+mail_title = conf.get('mail', 'mail_title')
+mail_message = conf.get('mail', 'mail_message')
+file_path = os.path.join(REPORT_DIR, report_name)
 
- 
 suite = unittest.TestSuite()  # 创建测试集合
 loader = unittest.TestLoader()
 suite.addTest(loader.discover(CASE_DIR))
-
-file_path = os.path.join(REPORT_DIR, report_name)
 
 with open(file_path, 'wb') as f:
     runner = HTMLTestRunner(
@@ -45,7 +45,6 @@ with open(file_path, 'wb') as f:
     runner.run(suite)
 
 
-mail_title = "小钱贷项目接口测试报告"
-mail_message = "这是小钱贷接口测试报告，请各位领导注意查收，谢谢!"
+# 发送email
 SendEmail.send_qq_file_mail(mail_title, mail_message, file_path)
 # SendEmail.send_outlook_file_mail(mail_title, mail_message, file_path)
