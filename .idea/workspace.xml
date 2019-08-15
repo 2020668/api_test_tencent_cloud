@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="896291c5-ff29-4440-be86-de7a736d986f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/report/20190814232628_report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/20190814232800_report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/20190814233223_report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/send_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/constant.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/qcd_testcases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/qcd_testcases.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_add.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_audit.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_audit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_bidloan.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_bidloan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_getList.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_getList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_recharge.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_recharge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_withdraw.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_withdraw.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+            <state relative-caret-position="322">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="e#168#183#0" expanded="true" />
               </folding>
@@ -31,18 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/send_email.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2737">
-              <caret line="166" column="27" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -60,6 +58,7 @@
         <option value="$PROJECT_DIR$/testcases/test_recharge.py" />
         <option value="$PROJECT_DIR$/testcases/test_login.py" />
         <option value="$PROJECT_DIR$/common/send_email.py" />
+        <option value="$PROJECT_DIR$/common/constant.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -107,7 +106,7 @@
             <path>
               <item name="api_test_tencent_cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="api_test_tencent_cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+              <item name="test_cases" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="api_test_tencent_cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -322,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565795757835</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="version 20190815">
+      <created>1565881421158</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1565881421158</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -332,8 +338,8 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -350,7 +356,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="version 20190813" />
     <MESSAGE value="version 20190814" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 20190814" />
+    <MESSAGE value="version 20190815" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 20190815" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/report/20190813133030_report.html" />
@@ -384,8 +391,8 @@
         <state relative-caret-position="-153" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/test_audit.py" />
-    <entry file="file://$PROJECT_DIR$/testcases/test_add.py">
+    <entry file="file://$PROJECT_DIR$/test_cases/test_audit.py" />
+    <entry file="file://$PROJECT_DIR$/test_cases/test_add.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-126">
           <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
@@ -395,28 +402,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/test_withdraw.py" />
-    <entry file="file://$PROJECT_DIR$/testcases/test_register.py" />
-    <entry file="file://$PROJECT_DIR$/testcases/test_recharge.py" />
-    <entry file="file://$PROJECT_DIR$/testcases/test_login.py" />
-    <entry file="file://$PROJECT_DIR$/testcases/test_getList.py" />
-    <entry file="file://$PROJECT_DIR$/testcases/test_bidloan.py" />
+    <entry file="file://$PROJECT_DIR$/test_cases/test_withdraw.py" />
+    <entry file="file://$PROJECT_DIR$/test_cases/test_register.py" />
+    <entry file="file://$PROJECT_DIR$/test_cases/test_recharge.py" />
+    <entry file="file://$PROJECT_DIR$/test_cases/test_login.py" />
+    <entry file="file://$PROJECT_DIR$/test_cases/test_getList.py" />
+    <entry file="file://$PROJECT_DIR$/test_cases/test_bidloan.py" />
     <entry file="file://$PROJECT_DIR$/report/20190813234327_report.html" />
     <entry file="file://$PROJECT_DIR$/run_suite.py" />
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/common/send_email.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-          <folding>
-            <element signature="e#168#183#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="390">
+          <caret line="166" column="27" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/send_email.py">
+    <entry file="file://$PROJECT_DIR$/common/constant.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2737">
-          <caret line="166" column="27" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="27" />
+        <state relative-caret-position="322">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#168#183#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
