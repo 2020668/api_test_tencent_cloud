@@ -4306,3 +4306,207 @@ AssertionError: {'status': 0, 'code': '20109'} != {'status': 1, 'code': '10001'}
 2019-08-14 21:27:52,355 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 'a'}
 2019-08-14 21:27:52,392 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
 2019-08-14 21:27:52,774 - [test_add.py -->line:49] - INFO : ======== 加标接口测试执行完毕 ========
+2019-08-14 22:32:26,039 - [test_add.py -->line:42] - INFO : ======== 准备开始执行加标接口的测试 ========
+2019-08-14 22:32:26,160 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '13333113752', 'pwd': '123456'}
+2019-08-14 22:32:26,252 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-08-14 22:32:27,153 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'Title': '借款投资', 'Amount': 100000.0, 'LoanRate': 18.0, 'LoanTerm': 6, 'LoanDateType': 0, 'RepaymemtWay': 4, 'BiddingDays': 5}
+2019-08-14 22:32:27,992 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-08-14 22:32:28,775 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 2, 'repaymemtWay': 5, 'biddingDays': 5}
+2019-08-14 22:32:29,598 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-08-14 22:32:30,716 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 50000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 4, 'repaymemtWay': 10, 'biddingDays': 5}
+2019-08-14 22:32:31,126 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-08-14 22:32:32,403 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 20000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 11, 'biddingDays': 5}
+2019-08-14 22:32:33,127 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-08-14 22:32:34,341 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': None, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:34,384 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:32:35,383 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:35,426 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:32:36,753 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': None, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:36,797 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:32:37,787 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': None, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:37,835 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:32:38,824 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': None, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:38,873 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:32:39,809 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': None, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:39,845 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:32:40,406 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': None, 'biddingDays': 10}
+2019-08-14 22:32:40,449 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:32:41,007 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': None}
+2019-08-14 22:32:41,050 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:32:41,645 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': -1001, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:41,684 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20104'}, 实际结果：{'status': 0, 'code': '20104'}, 测试通过
+2019-08-14 22:32:42,250 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 1000001, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:42,289 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20105'}, 实际结果：{'status': 0, 'code': '20105'}, 测试通过
+2019-08-14 22:32:43,072 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:43,198 - [test_add.py -->line:88] - ERROR : {'status': 0, 'code': '20106'} != {'status': 1, 'code': '10001'}
+- {'code': '20106', 'status': 0}
+?           ^  --             ^
+
++ {'code': '10001', 'status': 1}
+?           ^^^               ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\testcases\test_add.py", line 75, in test_add
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20106'} != {'status': 1, 'code': '10001'}
+- {'code': '20106', 'status': 0}
+?           ^  --             ^
+
++ {'code': '10001', 'status': 1}
+?           ^^^               ^
+
+2019-08-14 22:32:44,373 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200090, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:44,532 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20106'}, 实际结果：{'status': 0, 'code': '20106'}, 测试通过
+2019-08-14 22:32:45,440 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:45,495 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20107'}, 实际结果：{'status': 0, 'code': '20107'}, 测试通过
+2019-08-14 22:32:46,425 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': -0.1, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:46,522 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20107'}, 实际结果：{'status': 0, 'code': '20107'}, 测试通过
+2019-08-14 22:32:47,589 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 24.1, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:47,696 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20107'}, 实际结果：{'status': 0, 'code': '20107'}, 测试通过
+2019-08-14 22:32:48,735 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 1, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:48,776 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20108'}, 实际结果：{'status': 0, 'code': '20108'}, 测试通过
+2019-08-14 22:32:49,831 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 'abc', 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:49,966 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:32:50,990 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': -0.0, 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:51,104 - [test_add.py -->line:88] - ERROR : {'status': 0, 'code': '20109'} != {'status': 1, 'code': '10001'}
+- {'code': '20109', 'status': 0}
+?           ^  --             ^
+
++ {'code': '10001', 'status': 1}
+?           ^^^               ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\testcases\test_add.py", line 75, in test_add
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20109'} != {'status': 1, 'code': '10001'}
+- {'code': '20109', 'status': 0}
+?           ^  --             ^
+
++ {'code': '10001', 'status': 1}
+?           ^^^               ^
+
+2019-08-14 22:32:52,210 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 'abc', 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:52,364 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:32:53,422 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 'aaa', 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:53,490 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:32:54,491 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 'a', 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:54,535 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:32:55,481 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 'a', 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:32:55,526 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:32:56,508 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 'a', 'biddingDays': 5}
+2019-08-14 22:32:56,549 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:32:57,458 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 'a'}
+2019-08-14 22:32:57,499 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:32:58,408 - [test_add.py -->line:49] - INFO : ======== 加标接口测试执行完毕 ========
+2019-08-14 22:33:35,367 - [test_add.py -->line:42] - INFO : ======== 准备开始执行加标接口的测试 ========
+2019-08-14 22:33:35,503 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '13333113752', 'pwd': '123456'}
+2019-08-14 22:33:35,586 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-08-14 22:33:36,539 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'Title': '借款投资', 'Amount': 100000.0, 'LoanRate': 18.0, 'LoanTerm': 6, 'LoanDateType': 0, 'RepaymemtWay': 4, 'BiddingDays': 5}
+2019-08-14 22:33:37,479 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-08-14 22:33:38,341 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 2, 'repaymemtWay': 5, 'biddingDays': 5}
+2019-08-14 22:33:39,121 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-08-14 22:33:39,913 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 50000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 4, 'repaymemtWay': 10, 'biddingDays': 5}
+2019-08-14 22:33:40,928 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-08-14 22:33:41,754 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 20000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 11, 'biddingDays': 5}
+2019-08-14 22:33:42,582 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-08-14 22:33:43,204 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': None, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:43,246 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:33:43,950 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:43,990 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:33:44,980 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': None, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:45,015 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:33:45,713 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': None, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:45,753 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:33:46,780 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': None, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:46,813 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:33:47,430 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': None, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:47,466 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:33:48,195 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': None, 'biddingDays': 10}
+2019-08-14 22:33:48,229 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:33:48,783 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': None}
+2019-08-14 22:33:48,818 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-08-14 22:33:49,451 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': -1001, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:49,495 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20104'}, 实际结果：{'status': 0, 'code': '20104'}, 测试通过
+2019-08-14 22:33:50,110 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 1000001, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:50,146 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20105'}, 实际结果：{'status': 0, 'code': '20105'}, 测试通过
+2019-08-14 22:33:50,760 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:50,809 - [test_add.py -->line:88] - ERROR : {'status': 0, 'code': '20106'} != {'status': 1, 'code': '10001'}
+- {'code': '20106', 'status': 0}
+?           ^  --             ^
+
++ {'code': '10001', 'status': 1}
+?           ^^^               ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\testcases\test_add.py", line 75, in test_add
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20106'} != {'status': 1, 'code': '10001'}
+- {'code': '20106', 'status': 0}
+?           ^  --             ^
+
++ {'code': '10001', 'status': 1}
+?           ^^^               ^
+
+2019-08-14 22:33:51,307 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200090, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:51,349 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20106'}, 实际结果：{'status': 0, 'code': '20106'}, 测试通过
+2019-08-14 22:33:51,843 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:51,884 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20107'}, 实际结果：{'status': 0, 'code': '20107'}, 测试通过
+2019-08-14 22:33:52,326 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': -0.1, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:52,371 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20107'}, 实际结果：{'status': 0, 'code': '20107'}, 测试通过
+2019-08-14 22:33:52,871 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 24.1, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:52,912 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20107'}, 实际结果：{'status': 0, 'code': '20107'}, 测试通过
+2019-08-14 22:33:53,747 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 1, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:53,788 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20108'}, 实际结果：{'status': 0, 'code': '20108'}, 测试通过
+2019-08-14 22:33:54,602 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 'abc', 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:54,636 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:33:55,653 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': -0.0, 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:55,712 - [test_add.py -->line:88] - ERROR : {'status': 0, 'code': '20109'} != {'status': 1, 'code': '10001'}
+- {'code': '20109', 'status': 0}
+?           ^  --             ^
+
++ {'code': '10001', 'status': 1}
+?           ^^^               ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\testcases\test_add.py", line 75, in test_add
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20109'} != {'status': 1, 'code': '10001'}
+- {'code': '20109', 'status': 0}
+?           ^  --             ^
+
++ {'code': '10001', 'status': 1}
+?           ^^^               ^
+
+2019-08-14 22:33:56,678 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 'abc', 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:56,717 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:33:57,721 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 'aaa', 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:57,763 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:33:58,677 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 'a', 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:58,713 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:33:59,643 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 'a', 'repaymemtWay': 4, 'biddingDays': 5}
+2019-08-14 22:33:59,692 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:34:00,658 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 'a', 'biddingDays': 5}
+2019-08-14 22:34:00,695 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:34:01,598 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 'a'}
+2019-08-14 22:34:01,635 - [test_add.py -->line:92] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-08-14 22:34:02,585 - [test_add.py -->line:49] - INFO : ======== 加标接口测试执行完毕 ========

@@ -180,3 +180,4 @@ class SendEmail(object):
         except Exception as e:
             print("send outlook_email failed")
             raise e
+
