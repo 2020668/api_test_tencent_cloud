@@ -54,7 +54,6 @@ class RechargeTestCase(unittest.TestCase):
 
     @data(*cases)   # 拆包，拆成几个参数
     def test_recharge(self, case):
-
         # 筛选用例的请求数据中做了#register__phone#标记的数据
         if "#register_phone#" in case.request_data:
             while True:
