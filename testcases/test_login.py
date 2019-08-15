@@ -3,7 +3,7 @@
 
 =================================
 Author: keen
-Created on: 2019/6/15
+Created on: 2019/6/14
 
 E-mail:keen2020@outlook.com
 
@@ -11,6 +11,7 @@ E-mail:keen2020@outlook.com
 
 
 """
+
 
 import unittest
 from library.ddt import ddt, data
@@ -20,10 +21,9 @@ from common.config import conf
 import os
 from common.constant import DATA_DIR
 from common.http_request import HTTPRequest2
-from common.execute_mysql import ExecuteMysql
-from decimal import Decimal
 from common.tools import rand_phone
 from common.tools import data_replace
+from common.execute_mysql import ExecuteMysql
 
 
 # 从配置文件获取数据
@@ -33,28 +33,25 @@ read_column = eval(read_column)     # 将str转换成list
 
 
 @ddt
-class RechargeTestCase(unittest.TestCase):
+class LoginTestCase(unittest.TestCase):
 
     # 拼接完整的excel路径，然后读取excel数据
-    wb = ReadExcel(os.path.join(DATA_DIR, file_name), "recharge")
-    # wb = ReadExcel(os.path.join(DATA_DIR, file_name), "Sheet1")
+    wb = ReadExcel(os.path.join(DATA_DIR, file_name), "login")
     cases = wb.read_column_data(read_column)
 
     @classmethod
     def setUpClass(cls):
-        my_log.info("======== 准备开始执行充值接口的测试 ========")
+        my_log.info("======== 准备开始执行登录接口的测试 ========")
         cls.request = HTTPRequest2()
         cls.db = ExecuteMysql()
 
     @classmethod
     def tearDownClass(cls):
-        my_log.info("======== 充值接口测试执行完毕 ========")
+        my_log.info("======== 登录接口测试执行完毕 ========")
         cls.request.close()
-        cls.db.close()
 
     @data(*cases)   # 拆包，拆成几个参数
-    def test_recharge(self, case):
-
+    def test_login(self, case):
         # 筛选用例的请求数据中做了#register__phone#标记的数据
         if "#register_phone#" in case.request_data:
             while True:
@@ -66,10 +63,10 @@ class RechargeTestCase(unittest.TestCase):
                 if count == 0:
                     break
             # 将用例中的#register__phone#替换成随机生成的手机号码
-            case.request_data = case.request_data.replace("#register_phone#", mobile_phone)
+            case.request_data = case.request_data = case.request_data.replace("#register_phone#", mobile_phone)
 
         # 选取请求的电话号为已注册的测试用例数据
-        if "#exists_phone#" in case.request_data:
+        elif "#exists_phone#" in case.request_data:
             # 从数据库获取第一条号码，给用例参数
             mobile_phone = self.db.find_one("SELECT MobilePhone FROM member LIMIT 1")[0]
             # 用从数据库获取的号码替换掉请求数据中的标记#exists_phone
@@ -77,38 +74,20 @@ class RechargeTestCase(unittest.TestCase):
 
         case.request_data = data_replace(case.request_data)
 
-        # 判断是否需要校验数据库
-        if case.check_mysql:
-            # 将登录手机号替换掉sql语句中的标记${login_phone}
-            # case.check_mysql = case.check_mysql.replace("${login_phone}", conf.get('test_data', "login_phone"))
-            case.check_mysql = data_replace(case.check_mysql)
-            # 调用查询数据方法，传入sql语句，返回元组，下标0取值,decimal
-            before_money = self.db.find_one(case.check_mysql)[0]
-
         # 拼接url地址
         url = conf.get("env", "url") + case.url
         self.row = case.case_id + 1
         response = self.request.request(method=case.method, url=url, data=eval(case.request_data))
+
         # 该打印的内容会显示在报告中
         print("请求数据--> {}".format(case.request_data))
         print("期望结果--> {}".format(case.expected_data))
         print("服务器响应数据--> {}".format(response.json()))
 
-        # res = response.json()返回json格式，自动转换成Python的dict类型，只取部分字段进行断言
-        res = {"status": response.json()["status"], "code": response.json()["code"], "msg": response.json()["msg"]}
+        res = response.json()
 
         try:
             self.assertEqual(eval(case.expected_data), res)
-            if case.check_mysql:
-                # case.request_data是str类型，先转换为dict再来取值，float
-                money = eval(case.request_data)["amount"]
-                # 将float类型转换成decimal类型，与数据库查询的结果数据类型一致，并设置保留2位小数
-                money = Decimal.from_float(money).quantize(Decimal("0.00"))
-                after_money = self.db.find_one(case.check_mysql)[0]
-                # 该打印的内容会显示在报告中
-                print("充值前余额为：{}, 本次充值金额：{}, 充值后余额为:{}".format(before_money, money, after_money))
-                self.assertEqual(before_money + money, after_money)
-
         except AssertionError as e:
             result = 'FAIL'
             my_log.exception(e)     # 将异常信息记录到日志
@@ -116,8 +95,6 @@ class RechargeTestCase(unittest.TestCase):
         else:
             result = 'PASS'
             my_log.debug("预期结果：%s, 实际结果：%s, 测试通过" % (eval(case.expected_data), res))
-
         finally:
-            self.wb.write_data(row=self.row, column=10, value=str(res))
-            self.wb.write_data(row=self.row, column=11, value=result)
-
+            self.wb.write_data(row=self.row, column=9, value=str(res))
+            self.wb.write_data(row=self.row, column=10, value=result)

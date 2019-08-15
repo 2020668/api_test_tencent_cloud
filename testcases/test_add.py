@@ -38,21 +38,18 @@ class AddTestCase(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-
         my_log.info("======== 准备开始执行加标接口的测试 ========")
         cls.request = HTTPRequest2()
         cls.db = ExecuteMysql()
 
     @classmethod
     def tearDownClass(cls):
-
         my_log.info("======== 加标接口测试执行完毕 ========")
         cls.request.close()
         cls.db.close()
 
     @data(*cases)   # 拆包，拆成几个参数
     def test_add(self, case):
-
         case.request_data = data_replace(case.request_data)
 
         if case.check_mysql:
