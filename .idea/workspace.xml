@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="896291c5-ff29-4440-be86-de7a736d986f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,19 +21,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_cases/test_withdraw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
+            <state relative-caret-position="1683">
               <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_cases/test_add.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1581">
+            <state relative-caret-position="623">
               <caret line="93" selection-start-line="93" selection-end-line="93" />
               <folding>
                 <element signature="e#169#184#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="554">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+              <folding>
+                <element signature="e#168#183#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,10 +79,10 @@
         <option value="$PROJECT_DIR$/testcases/test_recharge.py" />
         <option value="$PROJECT_DIR$/testcases/test_login.py" />
         <option value="$PROJECT_DIR$/common/send_email.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/util/aaa.py" />
         <option value="$PROJECT_DIR$/common/constant.py" />
         <option value="$PROJECT_DIR$/test_cases/test_withdraw.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -389,7 +402,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565885900522</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="version 20190827">
+      <created>1566837436119</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1566837436119</updated>
+    </task>
+    <task id="LOCAL-00020" summary="version 20190827">
+      <created>1566837585438</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1566837585439</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -421,7 +448,8 @@
     <MESSAGE value="version 20190816" />
     <MESSAGE value="version 20190815" />
     <MESSAGE value="version 2019081501" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 2019081501" />
+    <MESSAGE value="version 20190827" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 20190827" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/report/20190813133030_report.html" />
@@ -469,16 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="e#168#183#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/aaa.py" />
     <entry file="file://$PROJECT_DIR$/test_cases/test_login.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -502,17 +520,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_cases/test_withdraw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="1683">
           <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_cases/test_add.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
+        <state relative-caret-position="623">
           <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="e#169#184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#168#183#0" expanded="true" />
           </folding>
         </state>
       </provider>
