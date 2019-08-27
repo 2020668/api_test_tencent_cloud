@@ -36,4 +36,5 @@ LOG_DIR = os.path.join(BASE_DIR, 'logs')
 REPORT_DIR = os.path.join(BASE_DIR, 'report')
 
 # 获取测试用例目录的路径
-CASE_DIR = os.path.join(BASE_DIR, 'testcases')
+CASE_DIR = os.path.join(BASE_DIR, 'test_cases')
+

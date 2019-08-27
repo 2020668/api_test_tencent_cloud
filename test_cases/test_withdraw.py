@@ -119,3 +119,4 @@ class WithdrawTestCase(unittest.TestCase):
         finally:
             self.wb.write_data(row=self.row, column=10, value=str(res))
             self.wb.write_data(row=self.row, column=11, value=result)
+
