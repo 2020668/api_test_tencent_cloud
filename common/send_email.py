@@ -148,9 +148,9 @@ class SendEmail(object):
         # 发送邮件
         try:
             s.sendmail(from_addr=msg_from, to_addrs=msg["To"].split(','), msg=msg.as_string())
-            print("send qq_email successfully")
+            print("Send qq_email successfully")
         except Exception as e:
-            print("send qq_mail failed")
+            print("Send qq_mail failed")
             raise e
         # finally:
         #     s.quit()
