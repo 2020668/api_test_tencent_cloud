@@ -21,7 +21,7 @@ from common.config import conf
 import os
 from common.constant import DATA_DIR
 from common.http_request import HTTPRequest2
-from common.tools import rand_phone
+from common.tools import rand_phone, data_replace
 from common.execute_mysql import ExecuteMysql
 
 
@@ -70,6 +70,8 @@ class RegisterTestCase(unittest.TestCase):
             mobile_phone = self.db.find_one("SELECT MobilePhone FROM member LIMIT 1")[0]
             # 用从数据库获取的号码替换掉请求数据中的标记#exists_phone
             case.request_data = case.request_data.replace("#exists_phone#", mobile_phone)
+
+        case.request_data = data_replace(case.request_data)
 
         # 拼接url地址
         url = conf.get("env", "url") + case.url

@@ -27,7 +27,16 @@ class ConText(object):
 # def read(data):
 #     setattr(ConText, "key", data)
 
+# 接收号段，然后随机生成8位0-9的数字，添加在号段后面，组合成为指定号段的随机号码
+def rand_phone(segment):
+    phone = str(segment)
+    for i in range(8):
+        phone_end = random.randint(0, 9)
+        phone += str(phone_end)
+    return phone
 
+
+# 对测试用例的参数数据进行处理
 def data_replace(data):
     """
     :param data: 用例的参数
@@ -41,19 +50,34 @@ def data_replace(data):
             # value = getattr(ConText, "loanid")
             if "loanid" in data:
                 value = getattr(ConText, "loanid")
-        data = re.sub(p, value, data, count=1)
+            elif "phone1" in data:
+                value = rand_phone(eval(data)["mobilephone"][6:9])   # 获取请求数据的mobilephone后面的手机号段
+        data = re.sub(p, value, data, count=1)    # 将data的#号之间的数字，用value进行替换
     return data
 
 
-def rand_phone():
-    phone = "133"
-    for i in range(8):
-        phone_end = random.randint(0, 9)
-        phone += str(phone_end)
-    return phone
+# 获取随机的用户名，由6位包括数字，大写，小写字母组成
+def rand_name():
+    ret = ""
+    for i in range(6):
+        num = random.randint(0, 9)
+        # num = chr(random.randint(48,57))  # ASCII表示数字
+        letter = chr(random.randint(97, 122))   # 取小写字母
+        Letter = chr(random.randint(65, 90))    # 取大写字母
+        s = str(random.choice([num, letter, Letter]))
+        ret += s
+    return ret
+
+
+# 生成随机的ip地址
+def rand_ip():
+    ip = '{}.{}.{}.{}'.format(random.randint(0, 255), random.randint(0, 255),
+                              random.randint(0, 255), random.randint(0, 255))
+    return ip
 
 
 if __name__ == '__main__':
-    data = "hasdgiioghgaoigh#login_phone1#shg;g#pwd#"
+    # data = "#phone150#shg;g#pwd#"
+    data = "{'mobilephone':'#phone155#', 'pwd':'abc123456', 'regname':'张三'}"
     res = data_replace(data)
     print(res)
