@@ -15,9 +15,11 @@ E-mail:keen2020@outlook.com
 import re
 from common.config import conf
 import random
+from common.execute_mysql import ExecuteMysql
 
 # 匹配两个#中间的任意字符，至少一次，关闭贪婪
 p = r"#(.+?)#"
+db = ExecuteMysql()
 
 
 class ConText(object):
@@ -51,8 +53,15 @@ def data_replace(data):
             if "loanid" in data:
                 value = getattr(ConText, "loanid")
             elif "phone1" in data:
-                value = rand_phone(eval(data)["mobilephone"][6:9])   # 获取请求数据的mobilephone后面的手机号段
-        data = re.sub(p, value, data, count=1)    # 将data的#号之间的数字，用value进行替换
+                value = rand_phone(eval(data)["mobilephone"][6:9])   # 获取请求数据的mobilephone后面的手机号段,组合成随机号码
+                while True:
+                    value1 = "15517970510"
+                    # 查询数据库有无该随机号码
+                    count = db.find_count("SELECT Id FROM member WHERE MobilePhone={}".format(value1))
+                    # 数据库中无此随机号码，就不用继续随机生成，直接使用该随机号码
+                    if count == 0:
+                        break
+        data = re.sub(p, value1, data, count=1)    # 将data的#号之间的数字，用value进行替换
     return data
 
 

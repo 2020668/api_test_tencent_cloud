@@ -41,13 +41,13 @@ class BidLoanTestCase(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        my_log.info("======== 准备开始执行投资接口的测试 ========")
+        my_log.info("============================== 准备开始执行投资接口的测试 ===============================")
         cls.request = HTTPRequest2()
         cls.db = ExecuteMysql()
 
     @classmethod
     def tearDownClass(cls):
-        my_log.info("======== 投资接口测试执行完毕 ========")
+        my_log.info("=============================== 投资接口测试执行完毕 ==============================")
         cls.request.close()
         cls.db.close()
 

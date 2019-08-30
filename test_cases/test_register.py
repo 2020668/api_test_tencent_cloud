@@ -55,7 +55,7 @@ class RegisterTestCase(unittest.TestCase):
         if "#register_phone#" in case.request_data:
             while True:
                 # 生成随机号码
-                mobile_phone = rand_phone()
+                mobile_phone = rand_phone("133")
                 # 查询数据库有无该随机号码
                 count = self.db.find_count("SELECT Id FROM member WHERE MobilePhone={}".format(mobile_phone))
                 # 数据库中无此随机号码，就不用继续随机生成，直接使用该随机号码
