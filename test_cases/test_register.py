@@ -71,6 +71,7 @@ class RegisterTestCase(unittest.TestCase):
             # 用从数据库获取的号码替换掉请求数据中的标记#exists_phone
             case.request_data = case.request_data.replace("#exists_phone#", mobile_phone)
 
+        # 替换各号段的手机号码
         case.request_data = data_replace(case.request_data)
 
         # 拼接url地址

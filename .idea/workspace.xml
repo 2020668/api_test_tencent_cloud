@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="da0a32ec-7a48-454a-90a6-5554cbff2d81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/qcd_testcases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/qcd_testcases.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_add.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_audit.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_audit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_bidloan.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_bidloan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_getList.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_getList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_recharge.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_recharge.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_cases/test_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_register.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_withdraw.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_withdraw.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,14 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
+            <state relative-caret-position="120">
               <caret line="28" column="43" selection-start-line="50" selection-end-line="51" />
               <folding>
                 <element signature="e#168#183#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/config_test.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -56,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_cases/test_register.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="494">
+              <caret line="78" column="20" lean-forward="true" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
               <folding>
                 <element signature="e#170#185#0" expanded="true" />
               </folding>
@@ -154,6 +153,7 @@
       <recent name="C:\Users\Administrator\PycharmProjects\api_test_tencent_cloud" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\api_test_tencent_cloud\test_cases" />
       <recent name="C:\Users\Administrator\PycharmProjects\api_test_tencent_cloud\util" />
       <recent name="C:\Users\keen\PycharmProjects\api_test_tencent_cloud\testcases" />
       <recent name="C:\Users\Administrator\PycharmProjects\api_test_tencent_cloud\testcases" />
@@ -346,19 +346,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566881152035</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="version 20190830">
+      <created>1567148833276</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1567148833276</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15068494" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15068494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28169015" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28169015" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -376,7 +382,8 @@
     <MESSAGE value="version 20190813" />
     <MESSAGE value="version 20190815" />
     <MESSAGE value="version 20190827" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 20190827" />
+    <MESSAGE value="version 20190830" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 20190830" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/report/20190813133030_report.html" />
@@ -413,13 +420,6 @@
     <entry file="file://$PROJECT_DIR$/conf/env.ini">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/config_test.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python37/Lib/sre_parse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -441,7 +441,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/test_add.py">
+    <entry file="file://$PROJECT_DIR$/test_cases/test_add.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
           <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
@@ -458,22 +458,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_cases/test_register.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="120">
+          <caret line="28" column="43" selection-start-line="50" selection-end-line="51" />
           <folding>
-            <element signature="e#170#185#0" expanded="true" />
+            <element signature="e#168#183#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/conf/config_test.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="28" column="43" selection-start-line="50" selection-end-line="51" />
+        <state relative-caret-position="544">
+          <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_cases/test_register.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="78" column="20" lean-forward="true" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
           <folding>
-            <element signature="e#168#183#0" expanded="true" />
+            <element signature="e#170#185#0" expanded="true" />
           </folding>
         </state>
       </provider>
