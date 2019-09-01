@@ -66,6 +66,4 @@ class HTTPRequest2(object):
             return self.session.get(url=url, params=params, headers=headers, cookies=cookies)
 
     def close(self):
-
         self.session.close()
-
