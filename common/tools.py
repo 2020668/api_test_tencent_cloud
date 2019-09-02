@@ -44,26 +44,26 @@ def data_replace(data):
     :param data: 用例的参数
     :return: 替换之后的结果
     """
-
-    # 提取请求数据#中间的字符，
-    key = re.search(p, data).group(1)
-    try:
-        value = conf.get("test_data", key)      # 与配置文件匹配
-    except:
-        if "loanid" in data:
-            value = getattr(ConText, "loanid")      # 提供Content类,可以先设置属性再来获取
-        elif "phone1" in data:
-            while True:
-                value = rand_phone(eval(data)["mobilephone"][6:9])  # 获取请求数据的mobilephone后面的手机号段,组合成随机号码
-                # 查询数据库有无该随机号码
-                count = db.find_count("SELECT Id FROM member WHERE MobilePhone={}".format(value))
-                # 数据库中无此随机号码，就不用继续随机生成，直接使用该随机号码
-                if count == 0:
-                    break
-        else:
-            return "请求参数有误"
-    result = re.sub(p, value, data, count=1)    # 将data的#号之间的数字，用value进行替换，替换成功后没有#就退出循环
-    return result
+    # 提取请求数据#中间的字符, 当请求参数有#时才执行下方代码，替换完成后使用相同的变量名,再次做出判断,即可退出循环
+    while re.search(p, data):
+        key = re.search(p, data).group(1)
+        try:
+            value = conf.get("test_data", key)      # 与配置文件匹配
+        except:
+            if "loanid" in data:
+                value = getattr(ConText, "loanid")      # 提供Content类,可以先设置属性再来获取
+            elif "phone1" in data:
+                while True:
+                    value = rand_phone(eval(data)["mobilephone"][6:9])  # 获取请求数据的mobilephone后面的手机号段,组合成随机号码
+                    # 查询数据库有无该随机号码
+                    count = db.find_count("SELECT Id FROM member WHERE MobilePhone={}".format(value))
+                    # 数据库中无此随机号码，就不用继续随机生成，直接使用该随机号码
+                    if count == 0:
+                        break
+            else:
+                return "请求参数有误"
+        data = re.sub(p, value, data, count=1)    # 将data的#号之间的数字，用value进行替换，替换成功后没有#就退出循环
+    return data
 
 
 # 获取随机的用户名，由6位包括数字，大写，小写字母组成
@@ -88,6 +88,8 @@ def rand_ip():
 
 if __name__ == '__main__':
     # data = "#phone150#shg;g#pwd#"
-    data = "{'mobilephone':'#phone155#', 'pwd':'abc123456', 'regname':'张三'}"
+    # data = "{'mobilephone':'#phone155#', 'pwd':'abc123456', 'regname':'张三'}"
+    # res = data_replace(data)
+    data = '{"mobilephone":"13333113752", "pwd":"#pwd3#"}'
     res = data_replace(data)
     print(res)
