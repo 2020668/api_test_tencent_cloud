@@ -68,15 +68,15 @@ def data_replace(data):
 
 # 获取随机的用户名，由6位包括数字，大写，小写字母组成
 def rand_name():
-    ret = ""
+    name = ""
     for i in range(6):
         num = random.randint(0, 9)
         # num = chr(random.randint(48,57))  # ASCII表示数字
         letter = chr(random.randint(97, 122))   # 取小写字母
         Letter = chr(random.randint(65, 90))    # 取大写字母
         s = str(random.choice([num, letter, Letter]))
-        ret += s
-    return ret
+        name += s
+    return name
 
 
 # 生成随机的ip地址
@@ -88,6 +88,6 @@ def rand_ip():
 
 if __name__ == '__main__':
     # data = "#phone150#shg;g#pwd#"
-    data = "{'mobilephone':'#phone255#', 'pwd':'abc123456', 'regname':'张三'}"
+    data = "{'mobilephone':'#phone155#', 'pwd':'abc123456', 'regname':'张三'}"
     res = data_replace(data)
     print(res)
