@@ -14,7 +14,7 @@ E-mail:keen2020@outlook.com
 
 
 import unittest
-from ddt import ddt, data
+from library.ddt import ddt, data
 from common.read_excel import ReadExcel
 from common.logger import my_log   # 可直接导入对象
 from common.config import conf
