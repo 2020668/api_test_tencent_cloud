@@ -40,13 +40,13 @@ class RegisterTestCase(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        my_log.info("======== 准备开始执行注册接口的测试 =======")
+        my_log.info("============================== 准备开始执行注册接口的测试 ==============================")
         cls.request = HTTPRequest2()
         cls.db = ExecuteMysql()
 
     @classmethod
     def tearDownClass(cls):
-        my_log.info("======== 注册接口测试执行完毕 ========")
+        my_log.info("============================== 注册接口测试执行完毕 ==============================")
         cls.request.close()
 
     @data(*cases)   # 拆包，拆成几个参数

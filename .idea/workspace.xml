@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="896291c5-ff29-4440-be86-de7a736d986f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/http_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/http_request.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/qcd_testcases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/qcd_testcases.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190814232800_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190814233223_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190830144540_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190830150612_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/20190830152555_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/report/20190814223224_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/report/20190814223334_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/report/20190814232628_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/report/__init__.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+            <state relative-caret-position="918">
+              <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
               <folding>
                 <element signature="e#169#178#0" expanded="true" />
               </folding>
@@ -40,56 +29,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/config_test.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
+            <state relative-caret-position="-20">
               <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="167">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#168#183#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/logger.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/report/20190911224229_report.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_cases/test_register.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-103">
-              <folding>
-                <element signature="e#170#185#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_cases/test_login.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1233">
-              <caret line="84" column="54" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
-              <folding>
-                <element signature="e#170#185#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,7 +81,6 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/common/http_request.py" />
         <option value="$PROJECT_DIR$/common/tools.py" />
-        <option value="$PROJECT_DIR$/common/logger.py" />
       </list>
     </option>
   </component>
@@ -167,11 +118,6 @@
             <path>
               <item name="api_test_tencent_cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="api_test_tencent_cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api_test_tencent_cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api_test_tencent_cloud" type="462c0819:PsiDirectoryNode" />
               <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -202,15 +148,13 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\keen\PycharmProjects\api_test_tencent_cloud" />
-      <recent name="C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases" />
-      <recent name="C:\Users\keen\PycharmProjects\api_test_tencent_cloud\util" />
-      <recent name="C:\Users\keen\PycharmProjects\api_test_tencent_cloud\testcases" />
-      <recent name="C:\Users\Administrator\PycharmProjects\api_test_tencent_cloud\testcases" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\PycharmProjects\api_test_tencent_cloud" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\keen\PycharmProjects\api_test_tencent_cloud\testcases" />
+      <recent name="C:\Users\Administrator\PycharmProjects\api_test_tencent_cloud\testcases" />
+      <recent name="C:\Users\Administrator\PycharmProjects\api_test_tencent_cloud\util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -225,7 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.tools">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="api_test_tencent_cloud" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -333,8 +277,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.tools" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.send_email" />
         <item itemvalue="Python.run_suite" />
         <item itemvalue="Python.test" />
@@ -499,27 +443,19 @@
       <option name="project" value="LOCAL" />
       <updated>1566840235134</updated>
     </task>
-    <task id="LOCAL-00022" summary="version 20190901">
-      <created>1567340743509</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1567340743509</updated>
-    </task>
-    <option name="localTasksCounter" value="23" />
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31444758" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22096318" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -539,8 +475,7 @@
     <MESSAGE value="version 20190815" />
     <MESSAGE value="version 2019081501" />
     <MESSAGE value="version 20190827" />
-    <MESSAGE value="version 20190901" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 20190901" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 20190827" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/report/20190813133030_report.html" />
@@ -558,6 +493,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_cases/test_audit.py" />
+    <entry file="file://$PROJECT_DIR$/test_cases/test_register.py" />
     <entry file="file://$PROJECT_DIR$/test_cases/test_recharge.py" />
     <entry file="file://$PROJECT_DIR$/test_cases/test_getList.py" />
     <entry file="file://$PROJECT_DIR$/test_cases/test_bidloan.py" />
@@ -571,6 +507,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/aaa.py" />
+    <entry file="file://$PROJECT_DIR$/test_cases/test_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="e#170#185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/constant.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -611,95 +557,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/20190911215131_report.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/20190911215257_report.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/20190911215522_report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/config_test.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
+        <state relative-caret-position="-20">
           <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python37/Lib/re.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="285" selection-start-line="285" selection-end-line="285" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python37/Lib/sre_compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="763" selection-start-line="763" selection-end-line="763" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python37/Lib/sre_parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+        <state relative-caret-position="918">
+          <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
           <folding>
             <element signature="e#169#178#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/20190911222230_report.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        <state relative-caret-position="167">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#168#183#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/20190911224229_report.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_cases/test_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1233">
-          <caret line="84" column="54" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
-          <folding>
-            <element signature="e#170#185#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_cases/test_register.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <folding>
-            <element signature="e#170#185#0" expanded="true" />
           </folding>
         </state>
       </provider>

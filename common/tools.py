@@ -45,7 +45,8 @@ def data_replace(data):
     :return: 替换之后的结果
     """
 
-    # 提取请求数据#中间的字符
+    # 提取请求数据#中间的字符, 当请求参数有#时才执行下方代码，替换完成后使用相同的变量名,再次做出判断,即可退出循环
+
     while re.search(p, data):
         key = re.search(p, data).group(1)
         try:
@@ -58,7 +59,9 @@ def data_replace(data):
                     value = rand_phone(eval(data)["mobilephone"][6:9])  # 获取请求数据的mobilephone后面的手机号段,组合成随机号码
                     # 查询数据库有无该随机号码
                     count = db.find_count("SELECT Id FROM member WHERE MobilePhone={}".format(value))
+
                     print(count)
+
                     # 数据库中无此随机号码，就不用继续随机生成，直接使用该随机号码
                     if count == 0:
                         break
@@ -70,15 +73,15 @@ def data_replace(data):
 
 # 获取随机的用户名，由6位包括数字，大写，小写字母组成
 def rand_name():
-    ret = ""
+    name = ""
     for i in range(6):
         num = random.randint(0, 9)
         # num = chr(random.randint(48,57))  # ASCII表示数字
         letter = chr(random.randint(97, 122))   # 取小写字母
         Letter = chr(random.randint(65, 90))    # 取大写字母
         s = str(random.choice([num, letter, Letter]))
-        ret += s
-    return ret
+        name += s
+    return name
 
 
 # 生成随机的ip地址
@@ -90,6 +93,12 @@ def rand_ip():
 
 if __name__ == '__main__':
     # data = "#phone150#shg;g#pwd#"
+
     data = '{"mobilephone":"#login_phone1#", "pwd":"#pwd1#"}'
+
+    # data = "{'mobilephone':'#phone155#', 'pwd':'abc123456', 'regname':'张三'}"
+    # res = data_replace(data)
+    data = '{"mobilephone":"13333113752", "pwd":"#pwd3#"}'
+
     res = data_replace(data)
     print(res)
