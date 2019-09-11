@@ -52,8 +52,6 @@ class MyLogging(object):
         ls.setFormatter(ft)
         lf.setFormatter(ft)
 
-
-
         return my_log
 
 

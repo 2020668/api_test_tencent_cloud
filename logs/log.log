@@ -10191,3 +10191,1024 @@ AssertionError: {'status': 0, 'code': '20119', 'msg': '余额不足, 请修改�
 ?                               ^                    ^
 
 2019-09-11 22:47:38,131 - [test_withdraw.py -->line:50] - INFO : ======== 取现接口测试执行完毕 ========
+2019-09-11 23:02:41,462 - [test_add.py -->line:41] - INFO : ============================== 准备开始执行加标接口的测试 ==============================
+2019-09-11 23:02:41,607 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '13333113752', 'pwd': '123456'}
+2019-09-11 23:02:41,734 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:02:43,138 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'Title': '借款投资', 'Amount': 100000.0, 'LoanRate': 18.0, 'LoanTerm': 6, 'LoanDateType': 0, 'RepaymemtWay': 4, 'BiddingDays': 5}
+2019-09-11 23:02:44,496 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:02:45,880 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 2, 'repaymemtWay': 5, 'biddingDays': 5}
+2019-09-11 23:02:47,116 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:02:48,258 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 50000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 4, 'repaymemtWay': 10, 'biddingDays': 5}
+2019-09-11 23:02:49,358 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:02:51,271 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 20000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 11, 'biddingDays': 5}
+2019-09-11 23:02:51,949 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:02:53,245 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': None, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:02:53,306 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-09-11 23:02:54,363 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:02:54,424 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-09-11 23:02:55,491 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': None, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:02:55,556 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-09-11 23:02:56,408 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': None, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:02:56,467 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-09-11 23:02:57,233 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': None, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:02:57,297 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-09-11 23:02:58,475 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': None, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:02:58,537 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-09-11 23:02:59,724 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': None, 'biddingDays': 10}
+2019-09-11 23:02:59,786 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-09-11 23:03:00,966 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': None}
+2019-09-11 23:03:01,035 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20103'}, 实际结果：{'status': 0, 'code': '20103'}, 测试通过
+2019-09-11 23:03:02,055 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': -1001, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:02,122 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20104'}, 实际结果：{'status': 0, 'code': '20104'}, 测试通过
+2019-09-11 23:03:03,314 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 1000001, 'title': '借款开公司', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:03,376 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20105'}, 实际结果：{'status': 0, 'code': '20105'}, 测试通过
+2019-09-11 23:03:04,628 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:04,709 - [test_add.py -->line:85] - ERROR : {'status': 0, 'code': '20106'} != {'status': 1, 'code': '10001'}
+- {'code': '20106', 'status': 0}
+?           ^  --             ^
+
++ {'code': '10001', 'status': 1}
+?           ^^^               ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_add.py", line 72, in test_add
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20106'} != {'status': 1, 'code': '10001'}
+- {'code': '20106', 'status': 0}
+?           ^  --             ^
+
++ {'code': '10001', 'status': 1}
+?           ^^^               ^
+
+2019-09-11 23:03:05,954 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200090, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:06,020 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20106'}, 实际结果：{'status': 0, 'code': '20106'}, 测试通过
+2019-09-11 23:03:07,392 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:07,464 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20107'}, 实际结果：{'status': 0, 'code': '20107'}, 测试通过
+2019-09-11 23:03:08,735 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': -0.1, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:08,803 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20107'}, 实际结果：{'status': 0, 'code': '20107'}, 测试通过
+2019-09-11 23:03:09,886 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款开公司', 'amount': 200000, 'loanRate': 24.1, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:09,954 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20107'}, 实际结果：{'status': 0, 'code': '20107'}, 测试通过
+2019-09-11 23:03:11,091 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 1, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:11,157 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20108'}, 实际结果：{'status': 0, 'code': '20108'}, 测试通过
+2019-09-11 23:03:12,256 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 'abc', 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:12,318 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-09-11 23:03:13,459 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': -0.0, 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:13,538 - [test_add.py -->line:85] - ERROR : {'status': 0, 'code': '20109'} != {'status': 1, 'code': '10001'}
+- {'code': '20109', 'status': 0}
+?           ^  --             ^
+
++ {'code': '10001', 'status': 1}
+?           ^^^               ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_add.py", line 72, in test_add
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20109'} != {'status': 1, 'code': '10001'}
+- {'code': '20109', 'status': 0}
+?           ^  --             ^
+
++ {'code': '10001', 'status': 1}
+?           ^^^               ^
+
+2019-09-11 23:03:14,913 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 'abc', 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:14,978 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-09-11 23:03:16,173 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 'aaa', 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:16,239 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-09-11 23:03:17,428 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 'a', 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:17,493 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-09-11 23:03:18,597 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 'a', 'repaymemtWay': 4, 'biddingDays': 5}
+2019-09-11 23:03:18,659 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-09-11 23:03:19,787 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 'a', 'biddingDays': 5}
+2019-09-11 23:03:19,851 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-09-11 23:03:21,053 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 95, 'title': '借款投资', 'amount': 200000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 'a'}
+2019-09-11 23:03:21,117 - [test_add.py -->line:89] - INFO : 预期结果：{'status': 0, 'code': '20109'}, 实际结果：{'status': 0, 'code': '20109'}, 测试通过
+2019-09-11 23:03:22,420 - [test_add.py -->line:47] - INFO : ============================== 加标接口测试执行完毕 ==============================
+2019-09-11 23:03:22,422 - [test_audit.py -->line:43] - INFO : ============================== 准备开始执行审核接口的测试 ==============================
+2019-09-11 23:03:22,571 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '13306379619', 'pwd': '123456'}
+2019-09-11 23:03:22,696 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:03:23,853 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 96, 'Title': '借款投资', 'Amount': 200000.0, 'LoanRate': 18.0, 'LoanTerm': 6, 'LoanDateType': 0, 'RepaymemtWay': 4, 'BiddingDays': 5}
+2019-09-11 23:03:24,012 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:03:25,291 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 2}
+2019-09-11 23:03:25,445 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:03:26,495 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 3}
+2019-09-11 23:03:26,652 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:03:27,952 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 3}
+2019-09-11 23:03:28,024 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 0, 'code': '20207'}, 实际结果：{'status': 0, 'code': '20207'}, 测试通过
+2019-09-11 23:03:29,099 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 4}
+2019-09-11 23:03:29,263 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:03:30,401 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 5}
+2019-09-11 23:03:30,552 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:03:31,982 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 6}
+2019-09-11 23:03:32,137 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:03:33,410 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 8}
+2019-09-11 23:03:33,480 - [test_audit.py -->line:90] - ERROR : {'status': 1, 'code': '10001'} != {'status': 0, 'code': '20211'}
+- {'code': '10001', 'status': 1}
+?            ---              ^
+
++ {'code': '20211', 'status': 0}
+?           +++               ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_audit.py", line 86, in test_audit
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 1, 'code': '10001'} != {'status': 0, 'code': '20211'}
+- {'code': '10001', 'status': 1}
+?            ---              ^
+
++ {'code': '20211', 'status': 0}
+?           +++               ^
+
+2019-09-11 23:03:34,687 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 4}
+2019-09-11 23:03:34,838 - [test_audit.py -->line:90] - ERROR : {'status': 0, 'code': '20208'} != {'status': 1, 'code': '10001'}
+- {'code': '20208', 'status': 0}
+?           ^ - ^             ^
+
++ {'code': '10001', 'status': 1}
+?           ^  ^^             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_audit.py", line 86, in test_audit
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20208'} != {'status': 1, 'code': '10001'}
+- {'code': '20208', 'status': 0}
+?           ^ - ^             ^
+
++ {'code': '10001', 'status': 1}
+?           ^  ^^             ^
+
+2019-09-11 23:03:36,138 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 9}
+2019-09-11 23:03:36,216 - [test_audit.py -->line:90] - ERROR : {'status': 1, 'code': '10001'} != {'status': 0, 'code': '20211'}
+- {'code': '10001', 'status': 1}
+?            ---              ^
+
++ {'code': '20211', 'status': 0}
+?           +++               ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_audit.py", line 86, in test_audit
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 1, 'code': '10001'} != {'status': 0, 'code': '20211'}
+- {'code': '10001', 'status': 1}
+?            ---              ^
+
++ {'code': '20211', 'status': 0}
+?           +++               ^
+
+2019-09-11 23:03:37,496 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 11}
+2019-09-11 23:03:37,564 - [test_audit.py -->line:90] - ERROR : {'status': 1, 'code': '10001'} != {'status': 0, 'code': '20211'}
+- {'code': '10001', 'status': 1}
+?            ---              ^
+
++ {'code': '20211', 'status': 0}
+?           +++               ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_audit.py", line 86, in test_audit
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 1, 'code': '10001'} != {'status': 0, 'code': '20211'}
+- {'code': '10001', 'status': 1}
+?            ---              ^
+
++ {'code': '20211', 'status': 0}
+?           +++               ^
+
+2019-09-11 23:03:38,812 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 5}
+2019-09-11 23:03:38,960 - [test_audit.py -->line:90] - ERROR : {'status': 0, 'code': '20208'} != {'status': 1, 'code': '10001'}
+- {'code': '20208', 'status': 0}
+?           ^ - ^             ^
+
++ {'code': '10001', 'status': 1}
+?           ^  ^^             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_audit.py", line 86, in test_audit
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20208'} != {'status': 1, 'code': '10001'}
+- {'code': '20208', 'status': 0}
+?           ^ - ^             ^
+
++ {'code': '10001', 'status': 1}
+?           ^  ^^             ^
+
+2019-09-11 23:03:40,294 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': None, 'status': 11}
+2019-09-11 23:03:40,359 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 0, 'code': '20203'}, 实际结果：{'status': 0, 'code': '20203'}, 测试通过
+2019-09-11 23:03:41,563 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': None}
+2019-09-11 23:03:41,628 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 0, 'code': '20203'}, 实际结果：{'status': 0, 'code': '20203'}, 测试通过
+2019-09-11 23:03:42,968 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 12}
+2019-09-11 23:03:43,034 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 0, 'code': '20205'}, 实际结果：{'status': 0, 'code': '20205'}, 测试通过
+2019-09-11 23:03:44,362 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 1000001, 'status': 2}
+2019-09-11 23:03:44,435 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 1, 'code': '20206'}, 实际结果：{'status': 1, 'code': '20206'}, 测试通过
+2019-09-11 23:03:45,712 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 6}
+2019-09-11 23:03:45,866 - [test_audit.py -->line:90] - ERROR : {'status': 0, 'code': '20208'} != {'status': 1, 'code': '10001'}
+- {'code': '20208', 'status': 0}
+?           ^ - ^             ^
+
++ {'code': '10001', 'status': 1}
+?           ^  ^^             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_audit.py", line 86, in test_audit
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20208'} != {'status': 1, 'code': '10001'}
+- {'code': '20208', 'status': 0}
+?           ^ - ^             ^
+
++ {'code': '10001', 'status': 1}
+?           ^  ^^             ^
+
+2019-09-11 23:03:47,074 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 10}
+2019-09-11 23:03:47,143 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 0, 'code': '20211'}, 实际结果：{'status': 0, 'code': '20211'}, 测试通过
+2019-09-11 23:03:48,380 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 7}
+2019-09-11 23:03:48,456 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 0, 'code': '20210'}, 实际结果：{'status': 0, 'code': '20210'}, 测试通过
+2019-09-11 23:03:49,628 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 'abc#', 'status': 3}
+2019-09-11 23:03:49,694 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 0, 'code': '20212'}, 实际结果：{'status': 0, 'code': '20212'}, 测试通过
+2019-09-11 23:03:50,890 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2713, 'status': 'a'}
+2019-09-11 23:03:50,957 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 0, 'code': '20212'}, 实际结果：{'status': 0, 'code': '20212'}, 测试通过
+2019-09-11 23:03:52,128 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2002, 'status': '5'}
+2019-09-11 23:03:52,197 - [test_audit.py -->line:94] - DEBUG : 预期结果：{'status': 0, 'code': '20207'}, 实际结果：{'status': 0, 'code': '20207'}, 测试通过
+2019-09-11 23:03:53,531 - [test_audit.py -->line:49] - INFO : ============================== 审核接口测试执行完毕 ==============================
+2019-09-11 23:03:53,532 - [test_bidloan.py -->line:44] - INFO : ============================== 准备开始执行投资接口的测试 ===============================
+2019-09-11 23:03:53,752 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '13388502728', 'pwd': '123456'}
+2019-09-11 23:03:53,870 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:03:55,022 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13388502728', 'amount': 5000}
+2019-09-11 23:03:55,111 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:03:56,540 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 98, 'Title': '借款投资', 'amount': 3000.0, 'LoanRate': 18.0, 'LoanTerm': 6, 'LoanDateType': 0, 'RepaymemtWay': 4, 'BiddingDays': 5}
+2019-09-11 23:03:56,732 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:03:57,986 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2714, 'status': 2}
+2019-09-11 23:03:58,061 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:03:59,400 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2714, 'status': 3}
+2019-09-11 23:03:59,482 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:00,741 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '123456', 'loanId': '2714', 'amount': 2000}
+2019-09-11 23:04:00,810 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11010'}, 实际结果：{'status': 0, 'code': '11010'}, 测试通过
+2019-09-11 23:04:02,161 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2714, 'status': 4}
+2019-09-11 23:04:02,234 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:03,568 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '123456', 'loanId': 2714, 'amount': 2000}
+2019-09-11 23:04:04,029 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:05,530 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': '98', 'password': '123456', 'loanId': 2714, 'amount': 3000}
+2019-09-11 23:04:05,598 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11012'}, 实际结果：{'status': 0, 'code': '11012'}, 测试通过
+2019-09-11 23:04:06,693 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '13388502728', 'amount': 3000}
+2019-09-11 23:04:06,791 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:08,110 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': '98', 'password': '123456', 'loanId': 2714, 'amount': 1000}
+2019-09-11 23:04:08,226 - [test_bidloan.py -->line:107] - ERROR : {'status': 0, 'code': '11012'} != {'status': 1, 'code': '10001'}
+- {'code': '11012', 'status': 0}
+?            ^  -             ^
+
++ {'code': '10001', 'status': 1}
+?            ^^               ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_bidloan.py", line 92, in test_bid_loan
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '11012'} != {'status': 1, 'code': '10001'}
+- {'code': '11012', 'status': 0}
+?            ^  -             ^
+
++ {'code': '10001', 'status': 1}
+?            ^^               ^
+
+2019-09-11 23:04:09,517 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13388502728', 'amount': 1000}
+2019-09-11 23:04:09,614 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:10,904 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': None, 'password': '123456', 'loanId': 2714, 'amount': 2000}
+2019-09-11 23:04:10,965 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11003'}, 实际结果：{'status': 0, 'code': '11003'}, 测试通过
+2019-09-11 23:04:12,256 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '', 'loanId': 2714, 'amount': 2000}
+2019-09-11 23:04:12,314 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11003'}, 实际结果：{'status': 0, 'code': '11003'}, 测试通过
+2019-09-11 23:04:13,458 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '123456', 'loanId': None, 'amount': 2000}
+2019-09-11 23:04:13,514 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11003'}, 实际结果：{'status': 0, 'code': '11003'}, 测试通过
+2019-09-11 23:04:14,845 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '123456', 'loanId': 2714, 'amount': None}
+2019-09-11 23:04:14,901 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11003'}, 实际结果：{'status': 0, 'code': '11003'}, 测试通过
+2019-09-11 23:04:16,179 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 0, 'password': '123456', 'loanId': 2714, 'amount': 2000}
+2019-09-11 23:04:16,236 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11004'}, 实际结果：{'status': 0, 'code': '11004'}, 测试通过
+2019-09-11 23:04:17,212 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': -1001, 'password': '123456', 'loanId': 2714, 'amount': 2000}
+2019-09-11 23:04:17,269 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11004'}, 实际结果：{'status': 0, 'code': '11004'}, 测试通过
+2019-09-11 23:04:18,638 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '123456', 'loanId': 0, 'amount': 2000}
+2019-09-11 23:04:18,706 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11009'}, 实际结果：{'status': 0, 'code': '11009'}, 测试通过
+2019-09-11 23:04:20,042 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '123456', 'loanId': -1001, 'amount': 2000}
+2019-09-11 23:04:20,108 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11009'}, 实际结果：{'status': 0, 'code': '11009'}, 测试通过
+2019-09-11 23:04:21,588 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '12345', 'loanId': 2714, 'amount': 2000}
+2019-09-11 23:04:21,649 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11006'}, 实际结果：{'status': 0, 'code': '11006'}, 测试通过
+2019-09-11 23:04:23,081 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '1234567890123456789', 'loanId': 2714, 'amount': 2000}
+2019-09-11 23:04:23,142 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11006'}, 实际结果：{'status': 0, 'code': '11006'}, 测试通过
+2019-09-11 23:04:24,278 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '123456', 'loanId': 2714, 'amount': 990}
+2019-09-11 23:04:24,335 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11007'}, 实际结果：{'status': 0, 'code': '11007'}, 测试通过
+2019-09-11 23:04:25,630 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': '1248', 'password': '123456', 'loanId': 2714, 'amount': 2000}
+2019-09-11 23:04:25,694 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11008'}, 实际结果：{'status': 0, 'code': '11008'}, 测试通过
+2019-09-11 23:04:27,113 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '123456', 'loanId': '2715', 'amount': 2000}
+2019-09-11 23:04:27,177 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11009'}, 实际结果：{'status': 0, 'code': '11009'}, 测试通过
+2019-09-11 23:04:28,685 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '123456', 'loanId': 2714, 'amount': 1000}
+2019-09-11 23:04:28,754 - [test_bidloan.py -->line:107] - ERROR : {'status': 1, 'code': '10001'} != {'status': 0, 'code': '11010'}
+- {'code': '10001', 'status': 1}
+?            ^^               ^
+
++ {'code': '11010', 'status': 0}
+?            ^  +             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_bidloan.py", line 92, in test_bid_loan
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 1, 'code': '10001'} != {'status': 0, 'code': '11010'}
+- {'code': '10001', 'status': 1}
+?            ^^               ^
+
++ {'code': '11010', 'status': 0}
+?            ^  +             ^
+
+2019-09-11 23:04:30,003 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '123456', 'loanId': 2714, 'amount': 1000}
+2019-09-11 23:04:30,075 - [test_bidloan.py -->line:107] - ERROR : {'status': 0, 'code': '11011'} != {'status': 0, 'code': '11010'}
+- {'code': '11011', 'status': 0}
+?               ^
+
++ {'code': '11010', 'status': 0}
+?               ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_bidloan.py", line 92, in test_bid_loan
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '11011'} != {'status': 0, 'code': '11010'}
+- {'code': '11011', 'status': 0}
+?               ^
+
++ {'code': '11010', 'status': 0}
+?               ^
+
+2019-09-11 23:04:31,160 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 'abc', 'password': '123456', 'loanId': 2714, 'amount': 2000}
+2019-09-11 23:04:31,222 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11013'}, 实际结果：{'status': 0, 'code': '11013'}, 测试通过
+2019-09-11 23:04:32,479 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': 100, 'loanId': 2714, 'amount': 2000}
+2019-09-11 23:04:32,540 - [test_bidloan.py -->line:107] - ERROR : {'status': 0, 'code': '11013'} != {'status': 0, 'code': '11006'}
+- {'code': '11013', 'status': 0}
+?              ^^
+
++ {'code': '11006', 'status': 0}
+?              ^^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_bidloan.py", line 92, in test_bid_loan
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '11013'} != {'status': 0, 'code': '11006'}
+- {'code': '11013', 'status': 0}
+?              ^^
+
++ {'code': '11006', 'status': 0}
+?              ^^
+
+2019-09-11 23:04:34,096 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '123456', 'loanId': 'abc', 'amount': 2000}
+2019-09-11 23:04:34,170 - [test_bidloan.py -->line:107] - ERROR : {'status': 0, 'code': '11013'} != {'status': 0, 'code': '11009'}
+- {'code': '11013', 'status': 0}
+?              ^^
+
++ {'code': '11009', 'status': 0}
+?              ^^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_bidloan.py", line 92, in test_bid_loan
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '11013'} != {'status': 0, 'code': '11009'}
+- {'code': '11013', 'status': 0}
+?              ^^
+
++ {'code': '11009', 'status': 0}
+?              ^^
+
+2019-09-11 23:04:35,595 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 98, 'password': '123456', 'loanId': 2714, 'amount': 'abc'}
+2019-09-11 23:04:35,666 - [test_bidloan.py -->line:111] - DEBUG : 预期结果：{'status': 0, 'code': '11013'}, 实际结果：{'status': 0, 'code': '11013'}, 测试通过
+2019-09-11 23:04:37,092 - [test_bidloan.py -->line:50] - INFO : =============================== 投资接口测试执行完毕 ==============================
+2019-09-11 23:04:37,093 - [test_getList.py -->line:43] - INFO : ============================== 准备开始执行获取各种列表接口的测试 ===============================
+2019-09-11 23:04:37,298 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '13323735255', 'pwd': '123456'}
+2019-09-11 23:04:37,382 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:38,819 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13323735255', 'amount': 5000}
+2019-09-11 23:04:38,886 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:40,160 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/add， 请求参数：{'memberId': 101, 'Title': '借款投资', 'amount': 5000.0, 'LoanRate': 18.0, 'LoanTerm': 6, 'LoanDateType': 0, 'RepaymemtWay': 11, 'BiddingDays': 5}
+2019-09-11 23:04:40,320 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:41,593 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2715, 'status': 2}
+2019-09-11 23:04:41,657 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:43,021 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2715, 'status': 3}
+2019-09-11 23:04:43,072 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:44,202 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan//generateRepayments， 请求参数：{'id': 2715}
+2019-09-11 23:04:44,252 - [test_getList.py -->line:89] - ERROR : {'status': 0, 'code': '20405'} != {'status': 1, 'code': '20405'}
+- {'code': '20405', 'status': 0}
+?                             ^
+
++ {'code': '20405', 'status': 1}
+?                             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_getList.py", line 85, in test_get_list
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20405'} != {'status': 1, 'code': '20405'}
+- {'code': '20405', 'status': 0}
+?                             ^
+
++ {'code': '20405', 'status': 1}
+?                             ^
+
+2019-09-11 23:04:45,135 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan/audit， 请求参数：{'id': 2715, 'status': 4}
+2019-09-11 23:04:45,184 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:46,445 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/bidLoan， 请求参数：{'memberId': 101, 'password': '123456', 'loanId': 2715, 'amount': 5000}
+2019-09-11 23:04:46,533 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:47,609 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan//generateRepayments， 请求参数：{'id': 2715}
+2019-09-11 23:04:47,677 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:48,704 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan//generateRepayments， 请求参数：{'id': 2716}
+2019-09-11 23:04:48,750 - [test_getList.py -->line:89] - ERROR : {'status': 0, 'code': '20403'} != {'status': 1, 'code': '20403'}
+- {'code': '20403', 'status': 0}
+?                             ^
+
++ {'code': '20403', 'status': 1}
+?                             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_getList.py", line 85, in test_get_list
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20403'} != {'status': 1, 'code': '20403'}
+- {'code': '20403', 'status': 0}
+?                             ^
+
++ {'code': '20403', 'status': 1}
+?                             ^
+
+2019-09-11 23:04:49,935 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/loan//generateRepayments， 请求参数：{'id': 'abc'}
+2019-09-11 23:04:49,975 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 0, 'code': '20406'}, 实际结果：{'status': 0, 'code': '20406'}, 测试通过
+2019-09-11 23:04:51,155 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api//invest/getInvestsByMemberId， 请求参数：{'memberId': 101}
+2019-09-11 23:04:51,262 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:52,545 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api//invest/getInvestsByMemberId， 请求参数：{'memberId': None}
+2019-09-11 23:04:52,586 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 0, 'code': '30103'}, 实际结果：{'status': 0, 'code': '30103'}, 测试通过
+2019-09-11 23:04:53,736 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api//invest/getInvestsByMemberId， 请求参数：{'memberId': 'abc'}
+2019-09-11 23:04:53,810 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 0, 'code': '30104'}, 实际结果：{'status': 0, 'code': '30104'}, 测试通过
+2019-09-11 23:04:54,977 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/invest/getInvestsByLoanId， 请求参数：{'loanId': 2715}
+2019-09-11 23:04:55,021 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:56,201 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/invest/getInvestsByLoanId， 请求参数：{'loanId': None}
+2019-09-11 23:04:56,243 - [test_getList.py -->line:89] - ERROR : {'status': 0, 'code': '30203'} != {'status': 0, 'code': '30002'}
+- {'code': '30203', 'status': 0}
+?              --
+
++ {'code': '30002', 'status': 0}
+?             ++
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_getList.py", line 85, in test_get_list
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '30203'} != {'status': 0, 'code': '30002'}
+- {'code': '30203', 'status': 0}
+?              --
+
++ {'code': '30002', 'status': 0}
+?             ++
+
+2019-09-11 23:04:57,308 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/invest/getInvestsByLoanId， 请求参数：{'loanId': 'abc'}
+2019-09-11 23:04:57,397 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 0, 'code': '30204'}, 实际结果：{'status': 0, 'code': '30204'}, 测试通过
+2019-09-11 23:04:58,533 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/financelog/getFinanceLogList， 请求参数：{'memberId': 101}
+2019-09-11 23:04:58,693 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:04:59,605 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/financelog/getFinanceLogList， 请求参数：{'memberId': None}
+2019-09-11 23:04:59,657 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 0, 'code': '50103'}, 实际结果：{'status': 0, 'code': '50103'}, 测试通过
+2019-09-11 23:05:01,178 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/financelog/getFinanceLogList， 请求参数：{'memberId': 'abc'}
+2019-09-11 23:05:01,263 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 0, 'code': '50104'}, 实际结果：{'status': 0, 'code': '50104'}, 测试通过
+2019-09-11 23:05:02,596 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/financelog/getFinanceLogList， 请求参数：{'memberId': -1001}
+2019-09-11 23:05:02,643 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 0, 'code': '50105'}, 实际结果：{'status': 0, 'code': '50105'}, 测试通过
+2019-09-11 23:05:03,874 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/financelog/getFinanceLogList， 请求参数：{'memberId': 1248}
+2019-09-11 23:05:03,923 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 0, 'code': '50106'}, 实际结果：{'status': 0, 'code': '50106'}, 测试通过
+2019-09-11 23:05:05,079 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/list， 请求参数：None
+2019-09-11 23:05:06,738 - [test_getList.py -->line:93] - DEBUG : 预期结果：{'status': 1, 'code': '10001'}, 实际结果：{'status': 1, 'code': '10001'}, 测试通过
+2019-09-11 23:05:07,667 - [test_getList.py -->line:49] - INFO : ============================== 获取各种列表接口测试执行完毕 ==============================
+2019-09-11 23:05:07,667 - [test_login.py -->line:44] - INFO : =============================== 准备开始执行登录接口的测试 ==============================
+2019-09-11 23:05:07,886 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '13384698871', 'pwd': '123456'}
+2019-09-11 23:05:07,983 - [test_login.py -->line:97] - DEBUG : 预期结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}, 实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}, 测试通过
+2019-09-11 23:05:09,417 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '150 71369970', 'pwd': '123456'}
+2019-09-11 23:05:09,474 - [test_login.py -->line:97] - DEBUG : 预期结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 实际结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 测试通过
+2019-09-11 23:05:10,642 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': ' ', 'pwd': 'abc123'}
+2019-09-11 23:05:10,690 - [test_login.py -->line:97] - DEBUG : 预期结果：{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}, 实际结果：{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}, 测试通过
+2019-09-11 23:05:12,158 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '13979321026', 'pwd': 'abc123'}
+2019-09-11 23:05:12,212 - [test_login.py -->line:97] - DEBUG : 预期结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 实际结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 测试通过
+2019-09-11 23:05:13,577 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': 'a1507133990', 'pwd': 'abc123'}
+2019-09-11 23:05:13,623 - [test_login.py -->line:97] - DEBUG : 预期结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 实际结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 测试通过
+2019-09-11 23:05:14,769 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '15815541733', 'pwd': ' '}
+2019-09-11 23:05:14,822 - [test_login.py -->line:97] - DEBUG : 预期结果：{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}, 实际结果：{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}, 测试通过
+2019-09-11 23:05:16,010 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '15815541733', 'pwd': '12345'}
+2019-09-11 23:05:16,058 - [test_login.py -->line:97] - DEBUG : 预期结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 实际结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 测试通过
+2019-09-11 23:05:17,558 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '15815541733', 'pwd': '1234567890123456789'}
+2019-09-11 23:05:17,609 - [test_login.py -->line:97] - DEBUG : 预期结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 实际结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 测试通过
+2019-09-11 23:05:18,858 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '13384698871', 'pwd': 'ABC123456'}
+2019-09-11 23:05:18,907 - [test_login.py -->line:97] - DEBUG : 预期结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 实际结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 测试通过
+2019-09-11 23:05:20,354 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '13384698871', 'pwd': 'ac1234567'}
+2019-09-11 23:05:20,406 - [test_login.py -->line:97] - DEBUG : 预期结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 实际结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}, 测试通过
+2019-09-11 23:05:22,022 - [test_login.py -->line:50] - INFO : =============================== 登录接口测试执行完毕 ==============================
+2019-09-11 23:05:22,022 - [test_recharge.py -->line:45] - INFO : ============================== 准备开始执行充值接口的测试 ==============================
+2019-09-11 23:05:22,173 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '13384698871', 'pwd': '123456'}
+2019-09-11 23:05:22,262 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 1, 'code': '10001', 'msg': '登录成功'}, 实际结果：{'status': 1, 'code': '10001', 'msg': '登录成功'}, 测试通过
+2019-09-11 23:05:23,628 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13384698871', 'amount': 500000}
+2019-09-11 23:05:23,777 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 1, 'code': '10001', 'msg': '充值成功'}, 实际结果：{'status': 1, 'code': '10001', 'msg': '充值成功'}, 测试通过
+2019-09-11 23:05:24,604 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13384698871', 'amount': 200000.5}
+2019-09-11 23:05:24,750 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 1, 'code': '10001', 'msg': '充值成功'}, 实际结果：{'status': 1, 'code': '10001', 'msg': '充值成功'}, 测试通过
+2019-09-11 23:05:25,666 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13384698871', 'amount': 0.01}
+2019-09-11 23:05:25,818 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 1, 'code': '10001', 'msg': '充值成功'}, 实际结果：{'status': 1, 'code': '10001', 'msg': '充值成功'}, 测试通过
+2019-09-11 23:05:27,873 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '', 'amount': 100.99}
+2019-09-11 23:05:27,924 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20103', 'msg': '手机号不能为空'}, 实际结果：{'status': 0, 'code': '20103', 'msg': '手机号不能为空'}, 测试通过
+2019-09-11 23:05:29,253 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13384698871', 'amount': None}
+2019-09-11 23:05:29,296 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20115', 'msg': '请输入金额'}, 实际结果：{'status': 0, 'code': '20115', 'msg': '请输入金额'}, 测试通过
+2019-09-11 23:05:30,739 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13955699881', 'amount': 1000}
+2019-09-11 23:05:30,782 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20104', 'msg': '此手机号对应的会员不存在'}, 实际结果：{'status': 0, 'code': '20104', 'msg': '此手机号对应的会员不存在'}, 测试通过
+2019-09-11 23:05:32,008 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': 'a5071369971', 'amount': 5000}
+2019-09-11 23:05:32,051 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 实际结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 测试通过
+2019-09-11 23:05:33,579 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '10071369971', 'amount': 5000}
+2019-09-11 23:05:33,617 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 实际结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 测试通过
+2019-09-11 23:05:35,105 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '1507136997', 'amount': 5000}
+2019-09-11 23:05:35,152 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 实际结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 测试通过
+2019-09-11 23:05:36,639 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '150713699711', 'amount': 5000}
+2019-09-11 23:05:36,680 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 实际结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 测试通过
+2019-09-11 23:05:38,017 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13384698871', 'amount': 2000.999}
+2019-09-11 23:05:38,057 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20116', 'msg': '输入金额的金额小数不能超过两位'}, 实际结果：{'status': 0, 'code': '20116', 'msg': '输入金额的金额小数不能超过两位'}, 测试通过
+2019-09-11 23:05:39,396 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13384698871', 'amount': 0}
+2019-09-11 23:05:39,451 - [test_recharge.py -->line:113] - ERROR : {'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'} != {'status': 1, 'code': '10001', 'msg': '充值成功'}
+- {'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额', 'status': 0}
++ {'code': '10001', 'msg': '充值成功', 'status': 1}
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_recharge.py", line 100, in test_recharge
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'} != {'status': 1, 'code': '10001', 'msg': '充值成功'}
+- {'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额', 'status': 0}
++ {'code': '10001', 'msg': '充值成功', 'status': 1}
+2019-09-11 23:05:40,737 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13384698871', 'amount': -1}
+2019-09-11 23:05:40,778 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'}, 实际结果：{'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'}, 测试通过
+2019-09-11 23:05:42,049 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13384698871', 'amount': 500000.01}
+2019-09-11 23:05:42,096 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'}, 实际结果：{'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'}, 测试通过
+2019-09-11 23:05:43,530 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13384698871', 'amount': 500000.01}
+2019-09-11 23:05:43,574 - [test_recharge.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'}, 实际结果：{'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'}, 测试通过
+2019-09-11 23:05:45,048 - [test_recharge.py -->line:51] - INFO : ============================== 充值接口测试执行完毕 ==============================
+2019-09-11 23:05:45,049 - [test_register.py -->line:43] - INFO : ============================== 准备开始执行注册接口的测试 ==============================
+2019-09-11 23:05:45,349 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13062842223', 'pwd': '123456', 'regname': 'baozi'}
+2019-09-11 23:05:45,481 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:05:46,854 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13192663767', 'pwd': 'abc123456789012300', 'regname': '张三'}
+2019-09-11 23:05:46,929 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:05:48,319 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13209818796', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:05:48,391 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:05:49,668 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13375689481', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:05:49,744 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:05:51,461 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13458011953', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:05:51,537 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:05:53,124 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13560723369', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:05:53,199 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:05:54,274 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13698896017', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:05:54,344 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:05:55,318 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13725693133', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:05:55,391 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:05:56,128 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13872135673', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:05:56,215 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:05:57,930 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13943763625', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:05:58,018 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:05:59,316 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '14540541062', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:05:59,412 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:00,721 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '14784445325', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:00,808 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:01,988 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '14923447278', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:02,049 - [test_register.py -->line:94] - ERROR : {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_register.py", line 91, in test_register
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+
+2019-09-11 23:06:03,341 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '15095849545', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:03,427 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:04,957 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '15135113720', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:05,037 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:06,979 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '15260527968', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:07,057 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:09,246 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '15368149143', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:09,324 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:10,907 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '15587891394', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:10,979 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:13,341 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '15655751864', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:13,432 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:15,225 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '15782532972', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:15,307 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:17,168 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '15826941463', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:17,247 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:19,203 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '15980360106', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:19,293 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:20,859 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '16688230702', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:20,927 - [test_register.py -->line:94] - ERROR : {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_register.py", line 91, in test_register
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+
+2019-09-11 23:06:22,765 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '17041310636', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:22,832 - [test_register.py -->line:94] - ERROR : {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_register.py", line 91, in test_register
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+
+2019-09-11 23:06:24,847 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '17107369931', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:24,914 - [test_register.py -->line:94] - ERROR : {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_register.py", line 91, in test_register
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+
+2019-09-11 23:06:27,146 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '17292573662', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:27,214 - [test_register.py -->line:94] - ERROR : {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_register.py", line 91, in test_register
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+
+2019-09-11 23:06:29,186 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '17305134058', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:29,252 - [test_register.py -->line:94] - ERROR : {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_register.py", line 91, in test_register
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+
+2019-09-11 23:06:31,107 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '17595699030', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:31,168 - [test_register.py -->line:94] - ERROR : {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_register.py", line 91, in test_register
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+
+2019-09-11 23:06:33,223 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '17645173514', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:33,296 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:35,069 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '17727785707', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:35,152 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:36,647 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '17890772045', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:36,723 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:38,473 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '18036678790', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:38,549 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:40,528 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '18191782489', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:40,603 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:42,266 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '18233392092', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:42,343 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:43,878 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '18377765395', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:43,954 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:45,495 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '18457780635', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:45,573 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:46,844 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '18577497843', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:46,923 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:48,429 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '18671309483', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:48,514 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:50,102 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '18734401620', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:50,174 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:51,629 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '18834934513', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:51,703 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:52,978 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '18994494661', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:53,053 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:54,329 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '19869218522', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:54,391 - [test_register.py -->line:94] - ERROR : {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_register.py", line 91, in test_register
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+
+2019-09-11 23:06:55,799 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '19981717799', 'pwd': 'abc123456', 'regname': '张三'}
+2019-09-11 23:06:55,865 - [test_register.py -->line:94] - ERROR : {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_register.py", line 91, in test_register
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+
+2019-09-11 23:06:57,262 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13394732781', 'pwd': 'abc123456789012300', 'regname': ' '}
+2019-09-11 23:06:57,339 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}, 断言结果:PASS
+2019-09-11 23:06:58,745 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '', 'pwd': 'abc123', 'regname': 'baozi'}
+2019-09-11 23:06:58,806 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}, 实际结果:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}, 断言结果:PASS
+2019-09-11 23:07:00,177 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13369274699', 'pwd': '', 'regname': 'baozi'}
+2019-09-11 23:07:00,238 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}, 实际结果:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}, 断言结果:PASS
+2019-09-11 23:07:01,559 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13318679326', 'pwd': 'ab123', 'regname': 'baozi'}
+2019-09-11 23:07:01,621 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}, 实际结果:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}, 断言结果:PASS
+2019-09-11 23:07:03,023 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '13354153908', 'pwd': 'abc1234567890123001', 'regname': 'baozi'}
+2019-09-11 23:07:03,085 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}, 实际结果:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}, 断言结果:PASS
+2019-09-11 23:07:04,566 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': 'a5071369972', 'pwd': 'abc123', 'regname': 'baozi'}
+2019-09-11 23:07:04,629 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}, 实际结果:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}, 断言结果:PASS
+2019-09-11 23:07:06,088 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '150 71369971', 'pwd': 'abc123456789012300', 'regname': '张三'}
+2019-09-11 23:07:06,151 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}, 实际结果:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}, 断言结果:PASS
+2019-09-11 23:07:07,516 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '10071369972', 'pwd': 'abc123', 'regname': 'baozi'}
+2019-09-11 23:07:07,580 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}, 实际结果:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}, 断言结果:PASS
+2019-09-11 23:07:08,516 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '1507136997', 'pwd': '123456', 'regname': 'baozi'}
+2019-09-11 23:07:08,574 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}, 实际结果:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}, 断言结果:PASS
+2019-09-11 23:07:09,557 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '150713699701', 'pwd': '123456', 'regname': 'baozi'}
+2019-09-11 23:07:09,620 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}, 实际结果:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}, 断言结果:PASS
+2019-09-11 23:07:10,485 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/register， 请求参数：{'mobilephone': '15815541733', 'pwd': '123456', 'regname': '王五'}
+2019-09-11 23:07:10,550 - [test_register.py -->line:98] - INFO : 预期结果:{'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}, 实际结果:{'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}, 断言结果:PASS
+2019-09-11 23:07:11,310 - [test_register.py -->line:49] - INFO : ============================== 注册接口测试执行完毕 ==============================
+2019-09-11 23:07:11,311 - [test_withdraw.py -->line:44] - INFO : ============================== 准备开始执行取现接口的测试 ==============================
+2019-09-11 23:07:11,465 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/login， 请求参数：{'mobilephone': '13343924900', 'pwd': '123456'}
+2019-09-11 23:07:11,588 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 1, 'code': '10001', 'msg': '登录成功'}, 实际结果：{'status': 1, 'code': '10001', 'msg': '登录成功'}, 测试通过
+2019-09-11 23:07:12,464 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13343924900', 'amount': 500000}
+2019-09-11 23:07:12,564 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 1, 'code': '10001', 'msg': '充值成功'}, 实际结果：{'status': 1, 'code': '10001', 'msg': '充值成功'}, 测试通过
+2019-09-11 23:07:13,569 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/recharge， 请求参数：{'mobilephone': '13343924900', 'amount': 200000.51}
+2019-09-11 23:07:13,657 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 1, 'code': '10001', 'msg': '充值成功'}, 实际结果：{'status': 1, 'code': '10001', 'msg': '充值成功'}, 测试通过
+2019-09-11 23:07:14,813 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '13343924900', 'amount': 500000}
+2019-09-11 23:07:14,981 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 1, 'code': '10001', 'msg': '取现成功'}, 实际结果：{'status': 1, 'code': '10001', 'msg': '取现成功'}, 测试通过
+2019-09-11 23:07:16,111 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '13343924900', 'amount': 199999.5}
+2019-09-11 23:07:16,277 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 1, 'code': '10001', 'msg': '取现成功'}, 实际结果：{'status': 1, 'code': '10001', 'msg': '取现成功'}, 测试通过
+2019-09-11 23:07:17,022 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '13343924900', 'amount': 0.01}
+2019-09-11 23:07:17,182 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 1, 'code': '10001', 'msg': '取现成功'}, 实际结果：{'status': 1, 'code': '10001', 'msg': '取现成功'}, 测试通过
+2019-09-11 23:07:18,509 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '', 'amount': 100.99}
+2019-09-11 23:07:18,569 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20103', 'msg': '手机号不能为空'}, 实际结果：{'status': 0, 'code': '20103', 'msg': '手机号不能为空'}, 测试通过
+2019-09-11 23:07:19,354 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '13343924900', 'amount': None}
+2019-09-11 23:07:19,416 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20115', 'msg': '请输入金额'}, 实际结果：{'status': 0, 'code': '20115', 'msg': '请输入金额'}, 测试通过
+2019-09-11 23:07:20,436 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '13321038279', 'amount': 1000}
+2019-09-11 23:07:20,501 - [test_withdraw.py -->line:113] - ERROR : {'status': 0, 'code': '20104', 'msg': '此手机号对应的会员不存在'} != {'status': 1, 'code': '20104', 'msg': '此手机号对应的会员不存在'}
+- {'code': '20104', 'msg': '此手机号对应的会员不存在', 'status': 0}
+?                                                    ^
+
++ {'code': '20104', 'msg': '此手机号对应的会员不存在', 'status': 1}
+?                                                    ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_withdraw.py", line 98, in test_withdraw
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20104', 'msg': '此手机号对应的会员不存在'} != {'status': 1, 'code': '20104', 'msg': '此手机号对应的会员不存在'}
+- {'code': '20104', 'msg': '此手机号对应的会员不存在', 'status': 0}
+?                                                    ^
+
++ {'code': '20104', 'msg': '此手机号对应的会员不存在', 'status': 1}
+?                                                    ^
+
+2019-09-11 23:07:21,905 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': 'a5071369971', 'amount': 5000}
+2019-09-11 23:07:21,972 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 实际结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 测试通过
+2019-09-11 23:07:23,206 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '10071369971', 'amount': 5000}
+2019-09-11 23:07:23,265 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 实际结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 测试通过
+2019-09-11 23:07:24,324 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '1507136997', 'amount': 5000}
+2019-09-11 23:07:24,387 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 实际结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 测试通过
+2019-09-11 23:07:25,753 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '150713699711', 'amount': 5000}
+2019-09-11 23:07:25,817 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 实际结果：{'status': 0, 'code': '20109', 'msg': '手机号码格式不正确'}, 测试通过
+2019-09-11 23:07:26,707 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '13343924900', 'amount': 2000.999}
+2019-09-11 23:07:26,767 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20116', 'msg': '输入金额的金额小数不能超过两位'}, 实际结果：{'status': 0, 'code': '20116', 'msg': '输入金额的金额小数不能超过两位'}, 测试通过
+2019-09-11 23:07:27,920 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '13343924900', 'amount': 0}
+2019-09-11 23:07:27,990 - [test_withdraw.py -->line:113] - ERROR : {'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'} != {'status': 1, 'code': '10001', 'msg': '取现成功'}
+- {'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额', 'status': 0}
++ {'code': '10001', 'msg': '取现成功', 'status': 1}
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_withdraw.py", line 98, in test_withdraw
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'} != {'status': 1, 'code': '10001', 'msg': '取现成功'}
+- {'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额', 'status': 0}
++ {'code': '10001', 'msg': '取现成功', 'status': 1}
+2019-09-11 23:07:28,693 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '13343924900', 'amount': -1}
+2019-09-11 23:07:28,755 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'}, 实际结果：{'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'}, 测试通过
+2019-09-11 23:07:29,611 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '13343924900', 'amount': 500000.01}
+2019-09-11 23:07:29,672 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'}, 实际结果：{'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'}, 测试通过
+2019-09-11 23:07:30,615 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '13343924900', 'amount': 500000.01}
+2019-09-11 23:07:30,678 - [test_withdraw.py -->line:117] - DEBUG : 预期结果：{'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'}, 实际结果：{'status': 0, 'code': '20117', 'msg': '请输入范围在0到50万之间的正数金额'}, 测试通过
+2019-09-11 23:07:31,749 - [http_request.py -->line:62] - INFO : 正在发送请求，请求地址：http://118.24.221.133:8080/futureloan/mvc/api/member/withdraw， 请求参数：{'mobilephone': '13343924900', 'amount': 500000}
+2019-09-11 23:07:31,815 - [test_withdraw.py -->line:113] - ERROR : {'status': 0, 'code': '20119', 'msg': '余额不足, 请修改提现额度'} != {'status': 1, 'code': '20119', 'msg': '余额不足，请修改提现额度'}
+- {'code': '20119', 'msg': '余额不足, 请修改提现额度', 'status': 0}
+?                               ^^                    ^
+
++ {'code': '20119', 'msg': '余额不足，请修改提现额度', 'status': 1}
+?                               ^                    ^
+Traceback (most recent call last):
+  File "C:\Users\keen\PycharmProjects\api_test_tencent_cloud\test_cases\test_withdraw.py", line 98, in test_withdraw
+    self.assertEqual(eval(case.expected_data), res)
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'status': 0, 'code': '20119', 'msg': '余额不足, 请修改提现额度'} != {'status': 1, 'code': '20119', 'msg': '余额不足，请修改提现额度'}
+- {'code': '20119', 'msg': '余额不足, 请修改提现额度', 'status': 0}
+?                               ^^                    ^
+
++ {'code': '20119', 'msg': '余额不足，请修改提现额度', 'status': 1}
+?                               ^                    ^
+
+2019-09-11 23:07:32,995 - [test_withdraw.py -->line:50] - INFO : ============================== 取现接口测试执行完毕 ==============================
