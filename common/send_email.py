@@ -17,7 +17,7 @@ from email.mime.text import MIMEText        # 构造邮件文本内容
 from email.header import Header      # 构造邮件标题
 from email.mime.application import MIMEApplication      # 发送带附件的邮件
 from email.mime.multipart import MIMEMultipart      # 发送带附件的邮件
-import win32com.client as win32
+# import win32com.client as win32
 
 
 class SendEmail(object):
@@ -155,29 +155,29 @@ class SendEmail(object):
         finally:
             s.quit()
 
-    @staticmethod
-    def send_outlook_file_mail(mail_title, mail_message, file_path):
-
-        addressee = '3023087535@qq.com' + ';' + 'zuowei2019@outlook.com'  # 收件人邮箱列表
-        cc = 'tomcat666888@163.com' + ';' + '87313199@qq.com'  # 抄送人邮件列表
-        mail_path = file_path  # 获取测试报告路径
-        olook = win32.Dispatch("outlook.Application")  # 固定写法
-        mail = olook.CreateItem(0)  # 固定写法
-        mail.To = addressee  # 收件人
-        mail.CC = cc  # 抄送人
-        # mail.Recipients.Add(addressee)
-        mail.Subject = mail_title  # 邮件主题
-        # mail.Attachments.Add(mail_path, 1, 1, "myFile")
-        mail.Attachments.Add(mail_path)
-        read = open(mail_path, encoding='utf-8')  # 打开需要发送的测试报告附件文件
-        # content = read.read()  # 读取测试报告文件中的内容
-        read.close()
-        mail.Body = mail_message  # 将从报告中读取的内容，作为邮件正文中的内容
-        try:
-            mail.Send()  # 发送
-            print("send outlook_email successfully")
-
-        except Exception as e:
-            print("send outlook_email failed")
-            raise e
+    # @staticmethod
+    # def send_outlook_file_mail(mail_title, mail_message, file_path):
+    #
+    #     addressee = '3023087535@qq.com' + ';' + 'zuowei2019@outlook.com'  # 收件人邮箱列表
+    #     cc = 'tomcat666888@163.com' + ';' + '87313199@qq.com'  # 抄送人邮件列表
+    #     mail_path = file_path  # 获取测试报告路径
+    #     olook = win32.Dispatch("outlook.Application")  # 固定写法
+    #     mail = olook.CreateItem(0)  # 固定写法
+    #     mail.To = addressee  # 收件人
+    #     mail.CC = cc  # 抄送人
+    #     # mail.Recipients.Add(addressee)
+    #     mail.Subject = mail_title  # 邮件主题
+    #     # mail.Attachments.Add(mail_path, 1, 1, "myFile")
+    #     mail.Attachments.Add(mail_path)
+    #     read = open(mail_path, encoding='utf-8')  # 打开需要发送的测试报告附件文件
+    #     # content = read.read()  # 读取测试报告文件中的内容
+    #     read.close()
+    #     mail.Body = mail_message  # 将从报告中读取的内容，作为邮件正文中的内容
+    #     try:
+    #         mail.Send()  # 发送
+    #         print("send outlook_email successfully")
+    #
+    #     except Exception as e:
+    #         print("send outlook_email failed")
+    #         raise e
 
