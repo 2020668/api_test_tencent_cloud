@@ -98,3 +98,4 @@ class LoginTestCase(unittest.TestCase):
         finally:
             self.wb.write_data(row=self.row, column=9, value=str(res))
             self.wb.write_data(row=self.row, column=10, value=result)
+

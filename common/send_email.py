@@ -17,6 +17,8 @@ from email.mime.text import MIMEText        # 构造邮件文本内容
 from email.header import Header      # 构造邮件标题
 from email.mime.application import MIMEApplication      # 发送带附件的邮件
 from email.mime.multipart import MIMEMultipart      # 发送带附件的邮件
+
+from common.config import conf
 # import win32com.client as win32
 
 
@@ -118,12 +120,13 @@ class SendEmail(object):
         s = smtplib.SMTP_SSL("smtp.qq.com", 465)
 
         # 登录SMTP服务器
-        msg_from = '3023087535@qq.com'
-        passwd = 'fhuqbslqpnkbdfje'
+        sender = conf.get("mail", "sender")
+        password = conf.get("mail", "password")
 
-        msg_to = ['415250069@qq.com', '87313199@qq.com', 'keen2020@outlook.com']
+        # str转换成list
+        recipient = eval(conf.get("mail", "recipient"))
 
-        s.login(user=msg_from, password=passwd)
+        s.login(user=sender, password=password)
 
         # 构建邮件内容
         # message = "这是W1935的自动化测试报告，请注意查收！"
@@ -142,12 +145,12 @@ class SendEmail(object):
         msg.attach(part)
 
         msg['Subject'] = Header(title, 'utf-8')
-        msg['From'] = msg_from      # 可以修改成任意名称
-        msg['To'] = ','.join(msg_to)
+        msg['From'] = sender      # 可以修改成任意名称
+        msg['To'] = ','.join(recipient)
 
         # 发送邮件
         try:
-            s.sendmail(from_addr=msg_from, to_addrs=msg["To"].split(','), msg=msg.as_string())
+            s.sendmail(from_addr=sender, to_addrs=msg["To"].split(','), msg=msg.as_string())
             print("Send qq_email successfully")
         except Exception as e:
             print("Send qq_mail failed")
@@ -181,3 +184,10 @@ class SendEmail(object):
     #         print("send outlook_email failed")
     #         raise e
 
+
+if __name__ == '__main__':
+    import os
+    from common.constant import LOG_DIR
+    file_path = os.path.join(LOG_DIR, "log.log")
+
+    SendEmail.send_qq_file_mail(title="测试邮件", message="测试邮件", file_path=file_path)

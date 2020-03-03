@@ -46,6 +46,6 @@ with open(file_path, 'wb') as f:
 
 
 # 发送email
-# SendEmail.send_qq_file_mail(mail_title, mail_message, file_path)
+SendEmail.send_qq_file_mail(mail_title, mail_message, file_path)
 # SendEmail.send_outlook_file_mail(mail_title, mail_message, file_path)
 

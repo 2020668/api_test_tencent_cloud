@@ -31,3 +31,10 @@ class ReadConfig(configparser.ConfigParser):
 
 
 conf = ReadConfig()
+
+
+if __name__ == '__main__':
+    url = conf.get("env", "url")
+    print(url)
+
+

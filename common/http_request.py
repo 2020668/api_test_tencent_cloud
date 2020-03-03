@@ -67,3 +67,13 @@ class HTTPRequest2(object):
 
     def close(self):
         self.session.close()
+
+
+if __name__ == '__main__':
+    request = HTTPRequest()
+    url = "http://118.24.221.133:8081/futureloan/mvc/api/member/login"
+    method = "post"
+    data = "{'mobilephone': '13384698871', 'pwd': 'ac1234567'}"
+
+    response = request.request(method=method, url=url, data=data)
+    print(response.json())

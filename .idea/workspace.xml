@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="896291c5-ff29-4440-be86-de7a736d986f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/report/20200226170413_report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/20200226183028_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/api_test_tencent_cloud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api_test_tencent_cloud.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/execute_mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/execute_mysql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/http_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/http_request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/read_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/read_excel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/send_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/tools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/config_test.ini" beforeDir="false" afterPath="$PROJECT_DIR$/conf/config_test.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/qcd_testcases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/qcd_testcases.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_add.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_audit.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_audit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_bidloan.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_bidloan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_getList.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_getList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_recharge.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_recharge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_register.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_withdraw.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/test_withdraw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/20200226171439_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/20200226183028_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +57,6 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\PycharmProjects\api_test_tencent_cloud" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test_cases" />
       <recent name="$PROJECT_DIR$/util" />
@@ -69,9 +64,75 @@
       <recent name="C:\Users\keen\PycharmProjects\api_test_tencent_cloud\testcases" />
       <recent name="C:\Users\Administrator\PycharmProjects\api_test_tencent_cloud\testcases" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\api_test_tencent_cloud" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="api_test_tencent_cloud" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="execute_mysql" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="api_test_tencent_cloud" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/execute_mysql.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="http_request" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="api_test_tencent_cloud" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/http_request.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="api_test_tencent_cloud" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,28 +153,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_suite" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="api_test_tencent_cloud" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_suite.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="send_email" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="read_excel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="api_test_tencent_cloud" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,49 +165,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/send_email.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="api_test_tencent_cloud" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="api_test_tencent_cloud" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/tools.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/read_excel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -179,10 +177,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.tools" />
-        <item itemvalue="Python.send_email" />
-        <item itemvalue="Python.run_suite" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.execute_mysql" />
+        <item itemvalue="Python.http_request" />
+        <item itemvalue="Python.read_excel" />
+        <item itemvalue="Python.config" />
       </list>
     </recent_temporary>
   </component>
@@ -363,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568214092210</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="version 2020022601">
+      <created>1582723132166</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1582723132166</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -375,29 +380,58 @@
     <MESSAGE value="version 2019081501" />
     <MESSAGE value="version 20190827" />
     <MESSAGE value="version 20190911" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 20190911" />
+    <MESSAGE value="version 2020022601" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 2020022601" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="283" key="GridCell.Tab.0.bottom" timestamp="1582708941227">
+    <state x="537" y="112" key="CommitChangelistDialog2" timestamp="1582723131799">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1899" height="283" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1582708941227" />
-    <state width="1899" height="283" key="GridCell.Tab.0.center" timestamp="1582708941226">
+    <state x="537" y="112" key="CommitChangelistDialog2/0.23.1920.977@0.23.1920.977" timestamp="1582723131799" />
+    <state width="1899" height="237" key="GridCell.Tab.0.bottom" timestamp="1583248825090">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1899" height="283" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1582708941226" />
-    <state width="1899" height="283" key="GridCell.Tab.0.left" timestamp="1582708941226">
+    <state width="1899" height="237" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1583248825090" />
+    <state width="1899" height="214" key="GridCell.Tab.0.bottom/0.23.1920.978@0.23.1920.978" timestamp="1583120092703" />
+    <state width="1899" height="237" key="GridCell.Tab.0.center" timestamp="1583248825089">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1899" height="283" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1582708941226" />
-    <state width="1899" height="283" key="GridCell.Tab.0.right" timestamp="1582708941227">
+    <state width="1899" height="237" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1583248825089" />
+    <state width="1899" height="214" key="GridCell.Tab.0.center/0.23.1920.978@0.23.1920.978" timestamp="1583120092702" />
+    <state width="1899" height="237" key="GridCell.Tab.0.left" timestamp="1583248825088">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1899" height="283" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1582708941227" />
-    <state x="469" y="150" key="SettingsEditor" timestamp="1582706008562">
+    <state width="1899" height="237" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1583248825088" />
+    <state width="1899" height="214" key="GridCell.Tab.0.left/0.23.1920.978@0.23.1920.978" timestamp="1583120092701" />
+    <state width="1899" height="237" key="GridCell.Tab.0.right" timestamp="1583248825089">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state x="469" y="150" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1582706008562" />
+    <state width="1899" height="237" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1583248825089" />
+    <state width="1899" height="214" key="GridCell.Tab.0.right/0.23.1920.978@0.23.1920.978" timestamp="1583120092702" />
+    <state width="1899" height="325" key="GridCell.Tab.1.bottom" timestamp="1582966071201">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1899" height="325" key="GridCell.Tab.1.bottom/0.23.1920.977@0.23.1920.977" timestamp="1582966071201" />
+    <state width="1899" height="325" key="GridCell.Tab.1.center" timestamp="1582966071201">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1899" height="325" key="GridCell.Tab.1.center/0.23.1920.977@0.23.1920.977" timestamp="1582966071201" />
+    <state width="1899" height="325" key="GridCell.Tab.1.left" timestamp="1582966071201">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1899" height="325" key="GridCell.Tab.1.left/0.23.1920.977@0.23.1920.977" timestamp="1582966071201" />
+    <state width="1899" height="325" key="GridCell.Tab.1.right" timestamp="1582966071201">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1899" height="325" key="GridCell.Tab.1.right/0.23.1920.977@0.23.1920.977" timestamp="1582966071201" />
+    <state x="312" y="142" key="SettingsEditor" timestamp="1582774365608">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="312" y="142" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1582774365608" />
+    <state x="560" y="251" key="Vcs.Push.Dialog.v2" timestamp="1582723195745">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="560" y="251" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1582723195745" />
     <state x="765" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582713002025">
       <screen x="0" y="23" width="1920" height="977" />
     </state>

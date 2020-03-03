@@ -35,6 +35,7 @@ def rand_phone(segment):
     for i in range(8):
         phone_end = random.randint(0, 9)
         phone += str(phone_end)
+
     return phone
 
 
