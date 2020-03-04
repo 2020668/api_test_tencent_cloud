@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="896291c5-ff29-4440-be86-de7a736d986f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/report/20200304103718_report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/qcd_testcases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/qcd_testcases.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -361,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583248877492</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="version 2020030401">
+      <created>1583286836926</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1583286836926</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -375,13 +386,14 @@
     <MESSAGE value="version 20190911" />
     <MESSAGE value="version 2020022601" />
     <MESSAGE value="version 2020030301" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 2020030301" />
+    <MESSAGE value="version 2020030401" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 2020030401" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="537" y="112" key="CommitChangelistDialog2" timestamp="1583248877135">
+    <state x="537" y="112" key="CommitChangelistDialog2" timestamp="1583286836549">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state x="537" y="112" key="CommitChangelistDialog2/0.23.1920.977@0.23.1920.977" timestamp="1583248877135" />
+    <state x="537" y="112" key="CommitChangelistDialog2/0.23.1920.977@0.23.1920.977" timestamp="1583286836549" />
     <state width="1899" height="237" key="GridCell.Tab.0.bottom" timestamp="1583250743200">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
@@ -422,10 +434,10 @@
       <screen x="0" y="23" width="1920" height="977" />
     </state>
     <state x="312" y="142" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1582774365608" />
-    <state x="560" y="251" key="Vcs.Push.Dialog.v2" timestamp="1583248883181">
+    <state x="560" y="251" key="Vcs.Push.Dialog.v2" timestamp="1583286843125">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state x="560" y="251" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1583248883181" />
+    <state x="560" y="251" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1583286843125" />
     <state x="765" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582713002025">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
